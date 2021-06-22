@@ -1,4 +1,5 @@
 ﻿
+using Parcial.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +20,7 @@ namespace Parcial.Forms.Materiales
         {
             InitializeComponent();
 
-            listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
+           // listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
 
             filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
             crearButton.Click += CrearButton_Click;
@@ -35,7 +36,7 @@ namespace Parcial.Forms.Materiales
         void SetDepto(Departamento dep)
         {
             Departamento = dep;
-
+            listaDeMatControl.SetMatItems(dep.Materiales);
             this.nombreLabel.Text = Departamento.Nombre;
             this.direccionLabel.Text = Departamento.Direccion;
         }
@@ -54,7 +55,7 @@ namespace Parcial.Forms.Materiales
 
         void RefrescarLista()
         {
-            listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
+            listaDeMatControl.SetMatItems(Departamento.Materiales);
             AplicarFiltro();
         }
 

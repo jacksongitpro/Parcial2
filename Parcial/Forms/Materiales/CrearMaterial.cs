@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,10 @@ namespace Parcial.Forms
 {
     public partial class CrearMaterial : Form
     {
+        //Departamento Departamento;
+
+
+        //GAW: Crear constructor con parametro departamento.
         public CrearMaterial()
         {
             InitializeComponent();
@@ -29,7 +34,8 @@ namespace Parcial.Forms
                 Cantidad = (int)cantidadNumericUpDown.Value
             };
 
-            BaseDeDatos.Materiales.Add(mat);
+            // BaseDeDatos.Materiales.Add(mat);
+            //Departamento.Materiales.Add();
 
             Close();
         }

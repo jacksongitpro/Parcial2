@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcial
+namespace Parcial.Models
 {
     public static class BaseDeDatos
     {
         public static List<Empleado> ListaEmpleados = new List<Empleado>();
         public static List<Usuario> Usuarios = new List<Usuario>();
         public static List<Departamento> Departamentos = new List<Departamento>();
-        public static List<Material> Materiales = new List<Material>();
+       // public static List<Material> Materiales = new List<Material>();
         public static void CargarUsuario()
         {
 
@@ -53,17 +53,17 @@ namespace Parcial
             emp6.Nombre = "Morena Leyes";
             emp6.Dni = 35987321;
             emp6.Matricula = 643897;
-           
-            
+
+
             ListaEmpleados.Add(emp1);
             ListaEmpleados.Add(emp2);
             ListaEmpleados.Add(emp3);
             ListaEmpleados.Add(emp4);
             ListaEmpleados.Add(emp5);
-            ListaEmpleados.Add(emp6);    
+            ListaEmpleados.Add(emp6);
 
 
-    }
+        }
         public static void CargarDM()
         {
             Material mat = new Material()
@@ -76,11 +76,11 @@ namespace Parcial
             {
                 Nombre = "Departamento Uno",
                 Direccion = "Avenida Verdadera 789",
-                Material = mat
+                
             };
 
             Departamentos.Add(dep);
-            Materiales.Add(mat);
+            dep.Materiales.Add(mat);
 
             mat = new Material()
             {
@@ -92,11 +92,11 @@ namespace Parcial
             {
                 Nombre = "Departamento Dos",
                 Direccion = "Calle Falsa 321",
-                Material = mat
+               
             };
 
             Departamentos.Add(dep);
-            Materiales.Add(mat);
+            dep.Materiales.Add(mat);
         }
     }
 }

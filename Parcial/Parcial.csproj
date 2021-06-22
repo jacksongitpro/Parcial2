@@ -100,7 +100,7 @@
     <Compile Include="Ingreso.Designer.cs">
       <DependentUpon>Ingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="Models\BaseDeDatos.cs" />
     <Compile Include="DetalleDelEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,8 +113,8 @@
     <Compile Include="DetalleEmpleado.Designer.cs">
       <DependentUpon>DetalleEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado.cs" />
-    <Compile Include="Especialidad.cs" />
+    <Compile Include="Models\Empleado.cs" />
+    <Compile Include="Models\Especialidad.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,7 +129,7 @@
     </Compile>
     <Compile Include="Models\Departamento.cs" />
     <Compile Include="Models\Material.cs" />
-    <Compile Include="Persona.cs" />
+    <Compile Include="Models\Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecuperacionForms.cs">
@@ -144,7 +144,7 @@
     <Compile Include="UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuario.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <EmbeddedResource Include="DetalleDelEmpleado.resx">
       <DependentUpon>DetalleDelEmpleado.cs</DependentUpon>
     </EmbeddedResource>

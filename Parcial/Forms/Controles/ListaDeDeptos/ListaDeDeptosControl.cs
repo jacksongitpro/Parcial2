@@ -1,5 +1,6 @@
 ﻿
 using Parcial.Controls.ListaDeDeptos;
+using Parcial.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Parcial.Forms.Controles.ListaDeDeptos
 {
-   
+
     public partial class ListaDeDeptosControl : UserControl
     {
         List<ListaDeDeptosItem> Items = new List<ListaDeDeptosItem>();

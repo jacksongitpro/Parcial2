@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcial
+namespace Parcial.Models
 {
     public class Persona
     {
-        public String Nombre;
+        public string Nombre;
         public int Dni;
         public int Matricula;
-       
+
     }
 }
