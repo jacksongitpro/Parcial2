@@ -43,14 +43,13 @@ namespace Parcial
         private void btncambiar_Click(object sender, EventArgs e)
         {
 
-            if (PassConfirmtextBox == PassNuevaBox)
+            if (PassConfirmBox.Text != PassNuevaBox.Text)
             {
-
                 PassNuevaBox.Clear();
                 PassNuevaBox.Focus();
                 MessageBox.Show("ingrese claves iguales");
             }
-            else
+            else if (PassConfirmBox.Text == PassNuevaBox.Text)
             {
                 admincreado.password = PassNuevaBox.Text;
                 admincreado.nombre = admincreado.nombre;
@@ -68,9 +67,10 @@ namespace Parcial
         }
         public void SetUsuario(Usuario admincreado)
         {
-            admincreado.nombre = "admin";
-            admincreado.password = PassNuevaBox.Text;
+            admincreado.nombre = "admin";            
             admincreado.codigo = "12345";
+            if (PassNuevaBox.Text == PassConfirmBox.Text)
+            {admincreado.password = PassNuevaBox.Text;}
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
@@ -86,7 +86,7 @@ namespace Parcial
                 //MessageBox.Show("!!Bienvenido!!");
                 RtaSecretatextBox.Clear();
                 PassNuevaBox.Enabled = true;
-                PassConfirmtextBox.Enabled = true;
+                PassConfirmBox.Enabled = true;
 
             }
         }
@@ -101,7 +101,7 @@ namespace Parcial
 
         }
 
-        private void PassConfirmtextBox_TextChanged(object sender, EventArgs e)
+        private void PassConfirmBox_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -130,7 +130,7 @@ namespace Parcial
                 //MessageBox.Show("!!Bienvenido!!");
                 RtaSecretatextBox.Clear();
                 PassNuevaBox.Enabled = true;
-                PassConfirmtextBox.Enabled = true;
+                PassConfirmBox.Enabled = true;
 
             }
         }

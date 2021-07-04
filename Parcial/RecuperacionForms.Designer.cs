@@ -34,7 +34,7 @@
             this.passNuevaLabel = new System.Windows.Forms.Label();
             this.PassConfirm = new System.Windows.Forms.Label();
             this.PassNuevaBox = new System.Windows.Forms.TextBox();
-            this.PassConfirmtextBox = new System.Windows.Forms.TextBox();
+            this.PassConfirmBox = new System.Windows.Forms.TextBox();
             this.btncambiar = new System.Windows.Forms.Button();
             this.btnRecuperar = new System.Windows.Forms.Button();
             this.labelusuario = new System.Windows.Forms.Label();
@@ -102,17 +102,17 @@
             this.PassNuevaBox.UseSystemPasswordChar = true;
             this.PassNuevaBox.TextChanged += new System.EventHandler(this.PassNuevaBox_TextChanged);
             // 
-            // PassConfirmtextBox
+            // PassConfirmBox
             // 
-            this.PassConfirmtextBox.Enabled = false;
-            this.PassConfirmtextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassConfirmtextBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.PassConfirmtextBox.Location = new System.Drawing.Point(28, 213);
-            this.PassConfirmtextBox.Name = "PassConfirmtextBox";
-            this.PassConfirmtextBox.Size = new System.Drawing.Size(236, 22);
-            this.PassConfirmtextBox.TabIndex = 6;
-            this.PassConfirmtextBox.UseSystemPasswordChar = true;
-            this.PassConfirmtextBox.TextChanged += new System.EventHandler(this.PassConfirmtextBox_TextChanged);
+            this.PassConfirmBox.Enabled = false;
+            this.PassConfirmBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PassConfirmBox.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.PassConfirmBox.Location = new System.Drawing.Point(28, 213);
+            this.PassConfirmBox.Name = "PassConfirmBox";
+            this.PassConfirmBox.Size = new System.Drawing.Size(236, 22);
+            this.PassConfirmBox.TabIndex = 6;
+            this.PassConfirmBox.UseSystemPasswordChar = true;
+            this.PassConfirmBox.TextChanged += new System.EventHandler(this.PassConfirmBox_TextChanged);
             // 
             // btncambiar
             // 
@@ -168,7 +168,7 @@
             this.Controls.Add(this.labelusuario);
             this.Controls.Add(this.btnRecuperar);
             this.Controls.Add(this.btncambiar);
-            this.Controls.Add(this.PassConfirmtextBox);
+            this.Controls.Add(this.PassConfirmBox);
             this.Controls.Add(this.PassNuevaBox);
             this.Controls.Add(this.PassConfirm);
             this.Controls.Add(this.passNuevaLabel);
@@ -191,7 +191,7 @@
         private System.Windows.Forms.Label passNuevaLabel;
         private System.Windows.Forms.Label PassConfirm;
         private System.Windows.Forms.TextBox PassNuevaBox;
-        private System.Windows.Forms.TextBox PassConfirmtextBox;
+        private System.Windows.Forms.TextBox PassConfirmBox;
         private System.Windows.Forms.Button btncambiar;
         private System.Windows.Forms.Button btnRecuperar;
         private System.Windows.Forms.Label labelusuario;
