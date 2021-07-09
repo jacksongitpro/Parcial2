@@ -20,9 +20,11 @@ namespace Parcial
                 nombre = "admin",
                 password = "admin",
                 codigo = "12345",
+                Pregunta = "Codigo secreto"
 
-            };
-            Usuarios.Add(admin);
+            }; Usuarios.Add(admin);
+           
+
         }
 
         public static void Cargar()

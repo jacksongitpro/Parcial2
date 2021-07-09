@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Parcial
 {
-    //public class Especialidades
-    //{
-    //    public string Especialidad { get; set; }
-    //    public string Descripcion { get; set; }
-    //}
+    public class Especialidades
+    {
+        public string Especialidad { get; set; }
+        public string Descripcion { get; set; }
+    }
 }

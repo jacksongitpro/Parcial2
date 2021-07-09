@@ -34,11 +34,11 @@ namespace Parcial
 
             Usuario user = Usuarios.Find((Usuario admin) => admin.nombre == NombretextUsuario.Text && admin.password == textContraseña.Text);
             if (user != null)
-            {
-                MessageBox.Show("Ingreso Exitoso");
-                //Application.Run(new MenuPrincipal());
+            {                              
                 MenuPrincipal Form = new MenuPrincipal();
-                Form.ShowDialog();
+                this.Hide();
+                Form.ShowDialog();                
+
             }
             else
             {
@@ -49,6 +49,12 @@ namespace Parcial
                 return;
 
             }
+        }
+        private void linkLabel1RC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            RecuperacionForms Form = new RecuperacionForms();
+            Form.ShowDialog();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -69,18 +75,9 @@ namespace Parcial
 
 
         }
-
-
         private void labelClinica_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void linkLabel1RC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
-            RecuperacionForms Form = new RecuperacionForms();
-            Form.ShowDialog();
-        }
+        }       
     }
 }

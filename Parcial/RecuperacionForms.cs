@@ -54,9 +54,9 @@ namespace Parcial
                 admincreado.password = PassNuevaBox.Text;
                 admincreado.nombre = admincreado.nombre;
                 admincreado.codigo = admincreado.codigo;
-
-                BaseDeDatos.Usuarios.Add(admincreado);
                 BaseDeDatos.Usuarios.RemoveAt(0);
+                BaseDeDatos.Usuarios.Add(admincreado);
+                
 
                 Ingreso Form = new Ingreso(/*admincreado*/);
                 Form.ShowDialog();
@@ -133,6 +133,11 @@ namespace Parcial
                 PassConfirmBox.Enabled = true;
 
             }
+        }
+
+        private void RtaSecretatextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

@@ -1,5 +1,5 @@
-﻿namespace Parcial
-//JacksonGarcia
+﻿namespace Parcial //JacksonGarcia
+
 {
     partial class Ingreso
     {
