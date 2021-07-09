@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEspecialidades.Designer.cs">
+      <DependentUpon>FormEspecialidades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Controles\ListaDeDeptos\ListaDeDeptosControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +100,12 @@
     <Compile Include="Forms\Materiales\DetalleDepartamento.Designer.cs">
       <DependentUpon>DetalleDepartamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="MiCuenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiCuenta.Designer.cs">
+      <DependentUpon>MiCuenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,11 +127,11 @@
     </Compile>
     <Compile Include="Empleado.cs" />
     <Compile Include="Especialidad.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="GestiondelPersonal.cs">
       <SubType>Form</SubType>
@@ -151,8 +163,8 @@
     <EmbeddedResource Include="DetalleEmpleado.resx">
       <DependentUpon>DetalleEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormMenuPrincipal.resx">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controles\ListaDeDeptos\ListaDeDeptosControl.resx">
       <DependentUpon>ListaDeDeptosControl.cs</DependentUpon>
@@ -180,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestiondelPersonal.resx">
       <DependentUpon>GestiondelPersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiCuenta.resx">
+      <DependentUpon>MiCuenta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingreso.resx">
       <DependentUpon>Ingreso.cs</DependentUpon>
