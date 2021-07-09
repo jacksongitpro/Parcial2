@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-//JacksonGarcia
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -11,7 +10,7 @@ using System.Windows.Forms;
 
 
 
-namespace Parcial
+namespace Parcial //JacksonGarcia
 {
     public partial class Ingreso : Form
     {

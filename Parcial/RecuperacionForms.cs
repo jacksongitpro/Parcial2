@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//JacksonGarcia
 
-namespace Parcial
+
+namespace Parcial //JacksonGarcia
 {
     public partial class RecuperacionForms : Form
     {
@@ -58,7 +58,7 @@ namespace Parcial
                 BaseDeDatos.Usuarios.Add(admincreado);
                 
 
-                Ingreso Form = new Ingreso(/*admincreado*/);
+                Ingreso Form = new Ingreso();
                 Form.ShowDialog();
             }
 
@@ -82,12 +82,10 @@ namespace Parcial
                 return;
             }
             else
-            {
-                //MessageBox.Show("!!Bienvenido!!");
+            {                
                 RtaSecretatextBox.Clear();
                 PassNuevaBox.Enabled = true;
                 PassConfirmBox.Enabled = true;
-
             }
         }
 

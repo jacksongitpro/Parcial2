@@ -93,6 +93,7 @@ namespace Parcial
             this.label2.Size = new System.Drawing.Size(209, 69);
             this.label2.TabIndex = 4;
             this.label2.Text = "ISTEA";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 

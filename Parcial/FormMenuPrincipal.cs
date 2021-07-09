@@ -99,5 +99,10 @@ namespace Parcial
             label4.Text = user.nombre;
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
