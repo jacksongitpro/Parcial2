@@ -16,7 +16,7 @@ namespace Parcial.Modelo
         public string Calle { get; set; }
         public String Localidad { get; set; }
         public String Provincia { get; set; }
-        public Especialidades Especialidad { get; set; } = new Especialidades();
+        public Especialidad Especialidad { get; set; } //= new Especialidad();
         public String Descripcion { get; set; }
 
     }

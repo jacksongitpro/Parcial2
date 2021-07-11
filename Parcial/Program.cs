@@ -16,6 +16,7 @@ namespace Parcial
         static void Main()
         {
             BaseDeDatos.CargarUsuario();//JacksonGarcia
+            BaseDeDatos.CargarEspecialidad();//JacksonGarcia
             BaseDeDatos.Cargar();//Agustin
             BaseDeDatos.CargarDM();//Jehiel
             Application.EnableVisualStyles();

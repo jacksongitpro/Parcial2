@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Parcial.Modelo
 {
-    public class Especialidades
+    public class Especialidad
     {
-        public string Especialidad { get; set; }
+        public string Nombre { get; set; }
         public string Descripcion { get; set; }
     }
 }
