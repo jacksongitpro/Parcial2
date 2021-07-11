@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Parcial.Modelo;
 
 namespace Parcial
 {
@@ -55,5 +56,9 @@ namespace Parcial
             AplicarFiltro();
         }
 
+        private void GestionMaterial_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
