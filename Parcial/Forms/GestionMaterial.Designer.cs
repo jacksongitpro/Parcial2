@@ -35,6 +35,7 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             this.label2 = new System.Windows.Forms.Label();
             this.filtroTextBox = new System.Windows.Forms.TextBox();
             this.crearButton = new System.Windows.Forms.Button();
+            this.listaDeDeptosControl = new Parcial.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl();
             this.SuspendLayout();
             // 
             // label1
@@ -62,7 +63,7 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             // filtroTextBox
             // 
             this.filtroTextBox.Location = new System.Drawing.Point(109, 84);
-            this.filtroTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.filtroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.filtroTextBox.Name = "filtroTextBox";
             this.filtroTextBox.Size = new System.Drawing.Size(257, 22);
             this.filtroTextBox.TabIndex = 2;
@@ -70,23 +71,33 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             // crearButton
             // 
             this.crearButton.Location = new System.Drawing.Point(376, 81);
-            this.crearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.crearButton.Margin = new System.Windows.Forms.Padding(4);
             this.crearButton.Name = "crearButton";
             this.crearButton.Size = new System.Drawing.Size(100, 28);
             this.crearButton.TabIndex = 3;
             this.crearButton.Text = "Nuevo";
             this.crearButton.UseVisualStyleBackColor = true;
             // 
+            // listaDeDeptosControl
+            // 
+            this.listaDeDeptosControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listaDeDeptosControl.Location = new System.Drawing.Point(32, 133);
+            this.listaDeDeptosControl.Margin = new System.Windows.Forms.Padding(4);
+            this.listaDeDeptosControl.Name = "listaDeDeptosControl";
+            this.listaDeDeptosControl.Size = new System.Drawing.Size(313, 446);
+            this.listaDeDeptosControl.TabIndex = 4;
+            // 
             // GestionMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 554);
+            this.ClientSize = new System.Drawing.Size(518, 597);
+            this.Controls.Add(this.listaDeDeptosControl);
             this.Controls.Add(this.crearButton);
             this.Controls.Add(this.filtroTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GestionMaterial";
             this.Text = "Gestion de Materiales";
             this.Load += new System.EventHandler(this.GestionMaterial_Load);
@@ -96,10 +107,10 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
         }
 
         #endregion
-        private Forms.Controles.ListaDeDeptos.ListaDeDeptosControl listaDeDeptosControl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox filtroTextBox;
         private System.Windows.Forms.Button crearButton;
+        private Forms.Controles.ListaDeDeptos.ListaDeDeptosControl listaDeDeptosControl;
     }
 }
