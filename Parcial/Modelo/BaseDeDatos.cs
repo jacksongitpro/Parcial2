@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Parcial.Forms;
 
-namespace Parcial
+namespace Parcial.Modelo
 {
     public static class BaseDeDatos
     {
-        public static List<Empleado> ListaEmpleados = new List<Empleado>();
+        public static List<Empleado> Empleados = new List<Empleado>();
         public static List<Usuario> Usuarios = new List<Usuario>();
         public static List<Departamento> Departamentos = new List<Departamento>();
         public static List<Material> Materiales = new List<Material>();
@@ -57,12 +58,12 @@ namespace Parcial
             emp6.Matricula = 643897;
            
             
-            ListaEmpleados.Add(emp1);
-            ListaEmpleados.Add(emp2);
-            ListaEmpleados.Add(emp3);
-            ListaEmpleados.Add(emp4);
-            ListaEmpleados.Add(emp5);
-            ListaEmpleados.Add(emp6);    
+            Empleados.Add(emp1);
+            Empleados.Add(emp2);
+            Empleados.Add(emp3);
+            Empleados.Add(emp4);
+            Empleados.Add(emp5);
+            Empleados.Add(emp6);    
 
 
     }

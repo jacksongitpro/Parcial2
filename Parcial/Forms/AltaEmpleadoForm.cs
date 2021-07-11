@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Parcial
+namespace Parcial.Forms
 {
-    public partial class UserControl1 : UserControl
+    public partial class AltaEmpleadoForm : Form
     {
-        public UserControl1()
+        public AltaEmpleadoForm()
         {
             InitializeComponent();
         }

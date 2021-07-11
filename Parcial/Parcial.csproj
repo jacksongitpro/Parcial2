@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormEspecialidades.cs">
+    <Compile Include="Forms\AltaEmpleadoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormEspecialidades.Designer.cs">
+    <Compile Include="Forms\AltaEmpleadoForm.Designer.cs">
+      <DependentUpon>AltaEmpleadoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.Designer.cs">
+      <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DetalleEmpleadoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DetalleEmpleadoForm.Designer.cs">
+      <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEspecialidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEspecialidades.Designer.cs">
       <DependentUpon>FormEspecialidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GestionPersonalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GestionPersonalForm.Designer.cs">
+      <DependentUpon>GestionPersonalForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Controles\ListaDeDeptos\ListaDeDeptosControl.cs">
       <SubType>UserControl</SubType>
@@ -76,6 +100,12 @@
     <Compile Include="Forms\Controles\ListaDeMat\ListaDeMatItem.Designer.cs">
       <DependentUpon>ListaDeMatItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosControl.Designer.cs">
+      <DependentUpon>ListaDeEmpleadosControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Departamentos\CrearDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,71 +130,53 @@
     <Compile Include="Forms\Materiales\DetalleDepartamento.Designer.cs">
       <DependentUpon>DetalleDepartamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="MiCuenta.cs">
+    <Compile Include="Forms\MiCuenta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MiCuenta.Designer.cs">
+    <Compile Include="Forms\MiCuenta.Designer.cs">
       <DependentUpon>MiCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingreso.cs">
+    <Compile Include="Forms\Ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ingreso.Designer.cs">
+    <Compile Include="Forms\Ingreso.Designer.cs">
       <DependentUpon>Ingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="BaseDeDatos.cs" />
-    <Compile Include="DetalleDelEmpleado.cs">
+    <Compile Include="Modelo\BaseDeDatos.cs" />
+    <Compile Include="Modelo\Empleado.cs" />
+    <Compile Include="Modelo\Especialidad.cs" />
+    <Compile Include="Forms\FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DetalleDelEmpleado.Designer.cs">
-      <DependentUpon>DetalleDelEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DetalleEmpleado.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DetalleEmpleado.Designer.cs">
-      <DependentUpon>DetalleEmpleado.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Empleado.cs" />
-    <Compile Include="Especialidad.cs" />
-    <Compile Include="FormMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMenuPrincipal.Designer.cs">
+    <Compile Include="Forms\FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="GestiondelPersonal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestiondelPersonal.Designer.cs">
-      <DependentUpon>GestiondelPersonal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Departamento.cs" />
-    <Compile Include="Models\Material.cs" />
-    <Compile Include="Persona.cs" />
+    <Compile Include="Modelo\Departamento.cs" />
+    <Compile Include="Modelo\Material.cs" />
+    <Compile Include="Modelo\Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RecuperacionForms.cs">
+    <Compile Include="Forms\RecuperacionForms.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RecuperacionForms.Designer.cs">
+    <Compile Include="Forms\RecuperacionForms.Designer.cs">
       <DependentUpon>RecuperacionForms.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario.cs" />
-    <EmbeddedResource Include="DetalleDelEmpleado.resx">
-      <DependentUpon>DetalleDelEmpleado.cs</DependentUpon>
+    <Compile Include="Modelo\Usuario.cs" />
+    <EmbeddedResource Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosControl.resx">
+      <DependentUpon>ListaDeEmpleadosControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetalleEmpleado.resx">
-      <DependentUpon>DetalleEmpleado.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.resx">
+      <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMenuPrincipal.resx">
+    <EmbeddedResource Include="Forms\DetalleEmpleadoForm.resx">
+      <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GestionPersonalForm.resx">
+      <DependentUpon>GestionPersonalForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controles\ListaDeDeptos\ListaDeDeptosControl.resx">
       <DependentUpon>ListaDeDeptosControl.cs</DependentUpon>
@@ -190,13 +202,10 @@
     <EmbeddedResource Include="Forms\Materiales\DetalleDepartamento.resx">
       <DependentUpon>DetalleDepartamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GestiondelPersonal.resx">
-      <DependentUpon>GestiondelPersonal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MiCuenta.resx">
+    <EmbeddedResource Include="Forms\MiCuenta.resx">
       <DependentUpon>MiCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingreso.resx">
+    <EmbeddedResource Include="Forms\Ingreso.resx">
       <DependentUpon>Ingreso.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -208,11 +217,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="RecuperacionForms.resx">
+    <EmbeddedResource Include="Forms\RecuperacionForms.resx">
       <DependentUpon>RecuperacionForms.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

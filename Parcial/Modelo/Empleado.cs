@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcial
+namespace Parcial.Modelo
 {
     public class Empleado
     {
@@ -16,7 +16,7 @@ namespace Parcial
         public string Calle { get; set; }
         public String Localidad { get; set; }
         public String Provincia { get; set; }
-        public string Especialidad { get; set; }
+        public Especialidades Especialidad { get; set; } = new Especialidades();
         public String Descripcion { get; set; }
 
     }

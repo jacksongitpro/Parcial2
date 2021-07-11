@@ -4,13 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Parcial
+namespace Parcial.Modelo
 {
-    public class Departamento
+    public class Material
     {
         public string Nombre { get; set; }
-        public string Direccion { get; set; }
-
-        public Material Material { get; set; }
+        public int Cantidad { get; set; }
     }
 }
