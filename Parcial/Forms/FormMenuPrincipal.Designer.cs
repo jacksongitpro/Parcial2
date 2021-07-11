@@ -60,6 +60,7 @@ namespace Parcial
             this.buttonEspecialidades.TabIndex = 1;
             this.buttonEspecialidades.Text = "Especialidades";
             this.buttonEspecialidades.UseVisualStyleBackColor = true;
+            this.buttonEspecialidades.Click += new System.EventHandler(this.buttonEspecialidades_Click);
             // 
             // Especialidades
             // 

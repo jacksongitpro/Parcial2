@@ -70,5 +70,12 @@ namespace Parcial
         {
 
         }
+
+        private void buttonEspecialidades_Click(object sender, EventArgs e)
+        {
+            //this.Hide();
+            FormEspecialidades EspecialidadesForm = new FormEspecialidades();
+            EspecialidadesForm.ShowDialog();
+        }
     }
 }

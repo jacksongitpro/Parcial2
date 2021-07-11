@@ -58,6 +58,18 @@
     <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.Designer.cs">
       <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.Designer.cs">
+      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.Designer.cs">
+      <DependentUpon>ListaDeEspecialidadesControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DetalleEmpleadoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,8 +181,17 @@
     <EmbeddedResource Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.resx">
       <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.resx">
+      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.resx">
+      <DependentUpon>ListaDeEspecialidadesControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DetalleEmpleadoForm.resx">
       <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEspecialidades.resx">
+      <DependentUpon>FormEspecialidades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
@@ -220,6 +241,9 @@
     <EmbeddedResource Include="Forms\RecuperacionForms.resx">
       <DependentUpon>RecuperacionForms.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
