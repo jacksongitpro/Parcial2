@@ -9,10 +9,13 @@ namespace Parcial.Modelo
 {
     public static class BaseDeDatos
     {
+        
         public static List<Empleado> Empleados = new List<Empleado>();
         public static List<Usuario> Usuarios = new List<Usuario>();
         public static List<Departamento> Departamentos = new List<Departamento>();
         public static List<Material> Materiales = new List<Material>();
+        public static List<Especialidad> Especialidades = new List<Especialidad>();
+
         public static void CargarUsuario()
         {
 
