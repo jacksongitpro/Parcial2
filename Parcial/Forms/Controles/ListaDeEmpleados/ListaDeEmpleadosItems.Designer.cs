@@ -30,9 +30,9 @@
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.Verbutton = new System.Windows.Forms.Button();
-            this.NombreApellidoLabel = new System.Windows.Forms.Label();
-            this.numdnilabel5 = new System.Windows.Forms.Label();
-            this.nummatriculalabel4 = new System.Windows.Forms.Label();
+            this.nombreApellidoLabel = new System.Windows.Forms.Label();
+            this.DniLabel = new System.Windows.Forms.Label();
+            this.matriculalabel = new System.Windows.Forms.Label();
             this.Matriculalabel3 = new System.Windows.Forms.Label();
             this.DNIlabel2 = new System.Windows.Forms.Label();
             this.Nombrelabel1 = new System.Windows.Forms.Label();
@@ -44,23 +44,23 @@
             this.panel2.AutoScroll = true;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.Verbutton);
-            this.panel2.Controls.Add(this.NombreApellidoLabel);
-            this.panel2.Controls.Add(this.numdnilabel5);
-            this.panel2.Controls.Add(this.nummatriculalabel4);
+            this.panel2.Controls.Add(this.nombreApellidoLabel);
+            this.panel2.Controls.Add(this.DniLabel);
+            this.panel2.Controls.Add(this.matriculalabel);
             this.panel2.Controls.Add(this.Matriculalabel3);
             this.panel2.Controls.Add(this.DNIlabel2);
             this.panel2.Controls.Add(this.Nombrelabel1);
             this.panel2.Location = new System.Drawing.Point(4, 4);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(357, 100);
+            this.panel2.Size = new System.Drawing.Size(344, 100);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Verbutton
             // 
             this.Verbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Verbutton.Location = new System.Drawing.Point(277, 43);
+            this.Verbutton.Location = new System.Drawing.Point(179, 33);
             this.Verbutton.Margin = new System.Windows.Forms.Padding(4);
             this.Verbutton.Name = "Verbutton";
             this.Verbutton.Size = new System.Drawing.Size(65, 36);
@@ -68,41 +68,41 @@
             this.Verbutton.Text = "Ver";
             this.Verbutton.UseVisualStyleBackColor = true;
             // 
-            // NombreApellidoLabel
+            // nombreApellidoLabel
             // 
-            this.NombreApellidoLabel.AutoSize = true;
-            this.NombreApellidoLabel.Location = new System.Drawing.Point(72, 5);
-            this.NombreApellidoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.NombreApellidoLabel.Name = "NombreApellidoLabel";
-            this.NombreApellidoLabel.Size = new System.Drawing.Size(46, 17);
-            this.NombreApellidoLabel.TabIndex = 5;
-            this.NombreApellidoLabel.Text = "label6";
+            this.nombreApellidoLabel.AutoSize = true;
+            this.nombreApellidoLabel.Location = new System.Drawing.Point(72, 5);
+            this.nombreApellidoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nombreApellidoLabel.Name = "nombreApellidoLabel";
+            this.nombreApellidoLabel.Size = new System.Drawing.Size(46, 17);
+            this.nombreApellidoLabel.TabIndex = 5;
+            this.nombreApellidoLabel.Text = "label6";
             // 
-            // numdnilabel5
+            // DniLabel
             // 
-            this.numdnilabel5.AutoSize = true;
-            this.numdnilabel5.Location = new System.Drawing.Point(56, 43);
-            this.numdnilabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.numdnilabel5.Name = "numdnilabel5";
-            this.numdnilabel5.Size = new System.Drawing.Size(46, 17);
-            this.numdnilabel5.TabIndex = 4;
-            this.numdnilabel5.Text = "label5";
+            this.DniLabel.AutoSize = true;
+            this.DniLabel.Location = new System.Drawing.Point(56, 43);
+            this.DniLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DniLabel.Name = "DniLabel";
+            this.DniLabel.Size = new System.Drawing.Size(58, 17);
+            this.DniLabel.TabIndex = 4;
+            this.DniLabel.Text = "Numero";
             // 
-            // nummatriculalabel4
+            // matriculalabel
             // 
-            this.nummatriculalabel4.AutoSize = true;
-            this.nummatriculalabel4.Location = new System.Drawing.Point(296, 5);
-            this.nummatriculalabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nummatriculalabel4.Name = "nummatriculalabel4";
-            this.nummatriculalabel4.Size = new System.Drawing.Size(46, 17);
-            this.nummatriculalabel4.TabIndex = 3;
-            this.nummatriculalabel4.Text = "label4";
+            this.matriculalabel.AutoSize = true;
+            this.matriculalabel.Location = new System.Drawing.Point(263, 5);
+            this.matriculalabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.matriculalabel.Name = "matriculalabel";
+            this.matriculalabel.Size = new System.Drawing.Size(56, 17);
+            this.matriculalabel.TabIndex = 3;
+            this.matriculalabel.Text = "numero";
             // 
             // Matriculalabel3
             // 
             this.Matriculalabel3.AutoSize = true;
             this.Matriculalabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Matriculalabel3.Location = new System.Drawing.Point(204, 5);
+            this.Matriculalabel3.Location = new System.Drawing.Point(176, 6);
             this.Matriculalabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Matriculalabel3.Name = "Matriculalabel3";
             this.Matriculalabel3.Size = new System.Drawing.Size(79, 17);
@@ -150,9 +150,9 @@
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button Verbutton;
-        private System.Windows.Forms.Label NombreApellidoLabel;
-        private System.Windows.Forms.Label numdnilabel5;
-        private System.Windows.Forms.Label nummatriculalabel4;
+        private System.Windows.Forms.Label nombreApellidoLabel;
+        private System.Windows.Forms.Label DniLabel;
+        private System.Windows.Forms.Label matriculalabel;
         private System.Windows.Forms.Label Matriculalabel3;
         private System.Windows.Forms.Label DNIlabel2;
         private System.Windows.Forms.Label Nombrelabel1;

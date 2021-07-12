@@ -32,7 +32,9 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             //Seteamos la persona que tenemos almacenada.
             Empleado = empleado;
             //Actualizamos el label con la info necesaria.
-            //nombreApellidoLabel.Text = $"{empleado.Nombre}";
+            nombreApellidoLabel.Text = $"{empleado.Nombre}";
+            matriculalabel.Text = $"{empleado.Matricula}";
+            DniLabel.Text = $"{empleado.Dni}";
         }
         private void ListaDeEmpleadosItems_Load(object sender, EventArgs e)
         {
