@@ -62,8 +62,8 @@ namespace Parcial.Modelo
             Empleado emp1 = new Empleado()
             {
                 Nombre = "Fernando Galvez",
-                Dni = 38401865,
-                Matricula = 123321,
+                Dni = "38401865",
+                Matricula = "123321",
                 Especialidad = Odontologia
             }; Empleados.Add(emp1);
 
@@ -72,6 +72,13 @@ namespace Parcial.Modelo
                 Descripcion = "Es la medicina dedicada al cuidado del sistema reproductor femenino",
                 Nombre = "Ginecologia",
             }; Especialidades.Add(Ginecologia);
+            Empleado emp2 = new Empleado()
+            {
+                Nombre = "Pedro perez",
+                Dni = "95654789",
+                Matricula = "656584",
+                Especialidad = Ginecologia
+            }; Empleados.Add(emp2);
 
             Especialidad Cardiologia = new Especialidad()
             {
@@ -80,38 +87,32 @@ namespace Parcial.Modelo
                 Nombre = "Cardiologia",
             }; Especialidades.Add(Cardiologia);
 
-            Empleado emp2 = new Empleado()
-            {
-                Nombre = "Gaston Robles",
-                Dni = 95654789,
-                Matricula = 876321,
-                Especialidad = Cardiologia
-            }; Empleados.Add(emp2);
-
             Empleado emp3 = new Empleado()
             {
-                Nombre = "Pedro perez",
-                Dni = 95654789,
-                Matricula = 656584,
-                Especialidad = Ginecologia
-            }; Empleados.Add(emp3);           
+                Nombre = "Gaston Robles",
+                Dni = "95654789",
+                Matricula = "876321",
+                Especialidad = Cardiologia
+            }; Empleados.Add(emp3);
+
+                     
            
             Empleado emp4 = new Empleado();
             emp4.Nombre = "Ruben caré";
-            emp4.Dni = 37653865;
-            emp4.Matricula = 999342;
+            emp4.Dni = "37653865";
+            emp4.Matricula = "999342";
             Empleado emp5 = new Empleado();
             emp5.Nombre = "Nicolas Tabares";
-            emp5.Dni = 38543781;
-            emp5.Matricula = 234876;
+            emp5.Dni = "38543781";
+            emp5.Matricula = "234876";
             Empleado emp6 = new Empleado();
             emp6.Nombre = "Morena Leyes";
-            emp6.Dni = 35987321;
-            emp6.Matricula = 643897;
+            emp6.Dni = "35987321";
+            emp6.Matricula = "643897";
             Empleado emp7 = new Empleado();
             emp7.Nombre = "Martin Peralta";
-            emp7.Dni = 35401266;
-            emp7.Matricula = 423351;
+            emp7.Dni = "35401266";
+            emp7.Matricula = "423351";
 
 
           

@@ -9,8 +9,8 @@ namespace Parcial.Modelo
     public class Empleado
     {
         public String Nombre { get; set; }
-        public int Dni { get; set; }
-        public int Matricula { get; set; }
+        public string Dni { get; set; }
+        public string Matricula { get; set; }
         public int Telefono { get; set; }
         public string Email { get; set; }
         public string Calle { get; set; }
