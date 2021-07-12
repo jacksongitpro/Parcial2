@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Parcial.Forms;
 using Parcial.Forms.Controles.ListaDeEmpleados;
 using Parcial.Modelo;
 
@@ -71,10 +72,10 @@ namespace Parcial
 
         }
 
-        private void buttonEspecialidades_Click(object sender, EventArgs e)
+        private void btnEspecialidades_Click(object sender, EventArgs e)
         {
             //this.Hide();
-            FormEspecialidades EspecialidadesForm = new FormEspecialidades();
+            GestionEspecialidadesForm EspecialidadesForm = new GestionEspecialidadesForm();
             EspecialidadesForm.ShowDialog();
         }
     }

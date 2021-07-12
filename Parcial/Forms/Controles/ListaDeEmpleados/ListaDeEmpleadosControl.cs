@@ -50,7 +50,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             }
         }
 
-        public void Filtrar(Predicate<Empleado> predicate)
+        public void FiltrarEmpleados(Predicate<Empleado> predicate)
         {
             //usamos el predicado para setear la propiedad de visible segun su resultado 
             for (int i = 0; i < Items.Count; i++)

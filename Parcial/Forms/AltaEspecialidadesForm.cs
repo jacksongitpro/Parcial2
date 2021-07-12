@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Parcial
+namespace Parcial.Forms
 {
-    public partial class FormEspecialidades : Form
+    public partial class AltaEspecialidadesForm : Form
     {
-        public FormEspecialidades()
+        public AltaEspecialidadesForm()
         {
             InitializeComponent();
         }

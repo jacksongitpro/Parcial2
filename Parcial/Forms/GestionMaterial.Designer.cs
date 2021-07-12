@@ -67,6 +67,7 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             this.filtroTextBox.Name = "filtroTextBox";
             this.filtroTextBox.Size = new System.Drawing.Size(257, 22);
             this.filtroTextBox.TabIndex = 2;
+            this.filtroTextBox.TextChanged += new System.EventHandler(this.filtroTextBox_TextChanged_1);
             // 
             // crearButton
             // 

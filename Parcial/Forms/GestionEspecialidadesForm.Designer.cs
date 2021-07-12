@@ -1,7 +1,9 @@
-﻿
-namespace Parcial
+﻿using Parcial.Controls;
+using Parcial.Modelo;
+using Parcial.Forms;
+namespace Parcial.Forms
 {
-    partial class FormEspecialidades
+    partial class GestionEspecialidadesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,8 +33,9 @@ namespace Parcial
         {
             this.labelEspecialidades = new System.Windows.Forms.Label();
             this.labelBuscar = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.filtroTextBox = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.ListaDeEspecialidadesControl = new Parcial.Forms.Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl();
             this.SuspendLayout();
             // 
             // labelEspecialidades
@@ -55,12 +58,13 @@ namespace Parcial
             this.labelBuscar.TabIndex = 1;
             this.labelBuscar.Text = "Buscar";
             // 
-            // textBox1
+            // filtroTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(64, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(130, 22);
-            this.textBox1.TabIndex = 2;
+            this.filtroTextBox.Location = new System.Drawing.Point(64, 55);
+            this.filtroTextBox.Name = "filtroTextBox";
+            this.filtroTextBox.Size = new System.Drawing.Size(130, 22);
+            this.filtroTextBox.TabIndex = 2;
+            this.filtroTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnBuscar
             // 
@@ -68,20 +72,30 @@ namespace Parcial
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(93, 30);
             this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.Text = "Nuevo";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
-            // FormEspecialidades
+            // ListaDeEspecialidadesControl
+            // 
+            this.ListaDeEspecialidadesControl.Location = new System.Drawing.Point(37, 125);
+            this.ListaDeEspecialidadesControl.Name = "ListaDeEspecialidadesControl";
+            this.ListaDeEspecialidadesControl.Size = new System.Drawing.Size(273, 310);
+            this.ListaDeEspecialidadesControl.TabIndex = 4;
+            // 
+            // GestionEspecialidadesForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 480);
+            this.ClientSize = new System.Drawing.Size(567, 590);
+            this.Controls.Add(this.ListaDeEspecialidadesControl);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.filtroTextBox);
             this.Controls.Add(this.labelBuscar);
             this.Controls.Add(this.labelEspecialidades);
-            this.Name = "FormEspecialidades";
-            this.Text = "FormEspecialidades";
+            this.Name = "GestionEspecialidadesForm";
+            this.Text = "Gestion de Especialidades";
+            this.Load += new System.EventHandler(this.FormEspecialidades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +105,9 @@ namespace Parcial
 
         private System.Windows.Forms.Label labelEspecialidades;
         private System.Windows.Forms.Label labelBuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox filtroTextBox;
         private System.Windows.Forms.Button btnBuscar;
+        private Forms.Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl listaDeEspecialidadesControl1;
+        private Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl ListaDeEspecialidadesControl;
     }
 }

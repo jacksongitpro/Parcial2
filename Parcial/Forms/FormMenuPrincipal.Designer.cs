@@ -30,7 +30,7 @@ namespace Parcial
         private void InitializeComponent()
         {
             this.buttonpersonal = new System.Windows.Forms.Button();
-            this.buttonEspecialidades = new System.Windows.Forms.Button();
+            this.btnEspecialidades = new System.Windows.Forms.Button();
             this.Especialidades = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,16 +51,16 @@ namespace Parcial
             this.buttonpersonal.UseVisualStyleBackColor = true;
             this.buttonpersonal.Click += new System.EventHandler(this.buttonpersonal_Click);
             // 
-            // buttonEspecialidades
+            // btnEspecialidades
             // 
-            this.buttonEspecialidades.Location = new System.Drawing.Point(279, 137);
-            this.buttonEspecialidades.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonEspecialidades.Name = "buttonEspecialidades";
-            this.buttonEspecialidades.Size = new System.Drawing.Size(168, 144);
-            this.buttonEspecialidades.TabIndex = 1;
-            this.buttonEspecialidades.Text = "Especialidades";
-            this.buttonEspecialidades.UseVisualStyleBackColor = true;
-            this.buttonEspecialidades.Click += new System.EventHandler(this.buttonEspecialidades_Click);
+            this.btnEspecialidades.Location = new System.Drawing.Point(279, 137);
+            this.btnEspecialidades.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEspecialidades.Name = "btnEspecialidades";
+            this.btnEspecialidades.Size = new System.Drawing.Size(168, 144);
+            this.btnEspecialidades.TabIndex = 1;
+            this.btnEspecialidades.Text = "Especialidades";
+            this.btnEspecialidades.UseVisualStyleBackColor = true;
+            this.btnEspecialidades.Click += new System.EventHandler(this.btnEspecialidades_Click);
             // 
             // Especialidades
             // 
@@ -154,7 +154,7 @@ namespace Parcial
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Especialidades);
-            this.Controls.Add(this.buttonEspecialidades);
+            this.Controls.Add(this.btnEspecialidades);
             this.Controls.Add(this.buttonpersonal);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuPrincipal";
@@ -168,7 +168,7 @@ namespace Parcial
         #endregion
 
         private System.Windows.Forms.Button buttonpersonal;
-        private System.Windows.Forms.Button buttonEspecialidades;
+        private System.Windows.Forms.Button btnEspecialidades;
         private System.Windows.Forms.Button Especialidades;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

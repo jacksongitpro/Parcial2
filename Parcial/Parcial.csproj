@@ -52,17 +52,17 @@
     <Compile Include="Forms\AltaEmpleadoForm.Designer.cs">
       <DependentUpon>AltaEmpleadoForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AltaEspecialidadesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AltaEspecialidadesForm.Designer.cs">
+      <DependentUpon>AltaEspecialidadesForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.Designer.cs">
       <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.Designer.cs">
-      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.cs">
       <SubType>UserControl</SubType>
@@ -70,17 +70,23 @@
     <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.Designer.cs">
       <DependentUpon>ListaDeEspecialidadesControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.Designer.cs">
+      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DetalleEmpleadoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\DetalleEmpleadoForm.Designer.cs">
       <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormEspecialidades.cs">
+    <Compile Include="Forms\GestionEspecialidadesForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormEspecialidades.Designer.cs">
-      <DependentUpon>FormEspecialidades.cs</DependentUpon>
+    <Compile Include="Forms\GestionEspecialidadesForm.Designer.cs">
+      <DependentUpon>GestionEspecialidadesForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GestionEmpleadosForm.cs">
       <SubType>Form</SubType>
@@ -181,17 +187,14 @@
     <EmbeddedResource Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosItems.resx">
       <DependentUpon>ListaDeEmpleadosItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.resx">
-      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesControl.resx">
       <DependentUpon>ListaDeEspecialidadesControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DetalleEmpleadoForm.resx">
       <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormEspecialidades.resx">
-      <DependentUpon>FormEspecialidades.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\GestionEspecialidadesForm.resx">
+      <DependentUpon>GestionEspecialidadesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormMenuPrincipal.resx">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>

@@ -20,9 +20,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         public GestionPersonalForm()
         {
             InitializeComponent();
-
-            //Cargamos el control personalizado con la informacion de la base de datos.
-            listaDeEmpleadosControl.SetItems(BaseDeDatos.Empleados);
+            ListaDeEmpleadosControl.SetItems(BaseDeDatos.Empleados);
 
             //Nos registramos a los eventos.
             filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
@@ -30,56 +28,54 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         }
 
         //Esto es un predicado.
-        bool FiltroDePersonas(Empleado p)
+        bool FiltroDeEmpleados(Empleado p)
         {
             string filtro = filtroTextBox.Text.ToUpper();
 
-            return filtro.Length < 2 || (p.Nombre.ToUpper().Contains(filtro));
+            return filtro.Length < 2 || (p.Nombre.ToUpper().Contains(filtro) || p.Dni.Contains(filtro) || p.Matricula.Contains(filtro));
         }
 
         void AplicarFiltro()
         {
             //Usamos la funcion que creamos en el control personalizado.
-            listaDeEmpleadosControl.Filtrar(FiltroDePersonas);
+            ListaDeEmpleadosControl.FiltrarEmpleados(FiltroDeEmpleados);
         }
 
         void RefrescarLista()
         {
             //Actualizamos la lista
-            listaDeEmpleadosControl.SetItems(BaseDeDatos.Empleados);
+            ListaDeEmpleadosControl.SetItems(BaseDeDatos.Empleados);
             //Volvemos a aplicar el fitro
             AplicarFiltro();
         }
-
-        void ActualizarListado()
-        {
-            for (int i = 0; i < Empleados.Count;i++ )
-            {
-                Label label = new Label();
-                label.Text = Empleados[i].Nombre;
-                panel2.Controls.Add(label);
-                
-            }
-        }
-
         private void CrearButton_Click(object sender, EventArgs e)
-        {
-            //Creamos el form
+        {           
             AltaEmpleadoForm form = new AltaEmpleadoForm();
-            //Usamos ShowDialog para que esta se bloquee hasta que terminen de usar el form de creacion.
             form.ShowDialog();
-
-            //cuando cerro la ventana de creacion, refrescamos la lista de items.
             RefrescarLista();
         }
-
-
 
         private void FiltroTextBox_TextChanged(object sender, EventArgs e)
         {
             //Cuando cambia el texto del textbox, aplicamos el filtro
             AplicarFiltro();
         }
+        //void ActualizarListado()
+        //{
+        //    for (int i = 0; i < Empleados.Count;i++ )
+        //    {
+        //        Label label = new Label();
+        //        label.Text = Empleados[i].Nombre;
+        //        //panel.Controls.Add(label);
+                
+        //    }
+        //}
+
+       
+
+
+
+      
 
         private void listaDePersonasControl_Load(object sender, EventArgs e)
         {
@@ -90,9 +86,9 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         {
 
         }
-        private Controles.ListaDeEmpleados.ListaDeEmpleadosControl listaDeEmpleadosControl;
-        private System.Windows.Forms.TextBox filtroTextBox;
-        private System.Windows.Forms.Button crearButton;
+
+        //private System.Windows.Forms.TextBox BuscartextBox;
+        //private System.Windows.Forms.Button crearButton;
 
         private void NombresPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -116,8 +112,8 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
 
         private void BuscartextBox_TextChanged(object sender, EventArgs e)
         {            
-                string letras = BuscartextBox.Text.ToUpper();
-                List<Empleado> Coincidencias = Empleados.FindAll((Empleado elem) => elem.Nombre.StartsWith(letras.ToUpper()));
+                //string letras = filtroTextBox.Text.ToUpper();
+                //List<Empleado> Coincidencias = Empleados.FindAll((Empleado elem) => elem.Nombre.StartsWith(letras.ToUpper()));
                         
         }
     }
