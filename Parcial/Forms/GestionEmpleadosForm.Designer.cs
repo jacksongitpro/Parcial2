@@ -32,7 +32,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             this.labelPersonal = new System.Windows.Forms.Label();
             this.labelBuscador = new System.Windows.Forms.Label();
             this.filtroTextBox = new System.Windows.Forms.TextBox();
-            this.crearButton = new System.Windows.Forms.Button();
+            this.BtnCrear = new System.Windows.Forms.Button();
             this.ListaDeEmpleadosControl = new Parcial.Forms.Controles.ListaDeEmpleados.ListaDeEmpleadosControl();
             this.SuspendLayout();
             // 
@@ -65,16 +65,16 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             this.filtroTextBox.TabIndex = 3;
             this.filtroTextBox.TextChanged += new System.EventHandler(this.BuscartextBox_TextChanged);
             // 
-            // crearButton
+            // BtnCrear
             // 
-            this.crearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.crearButton.Location = new System.Drawing.Point(355, 59);
-            this.crearButton.Name = "crearButton";
-            this.crearButton.Size = new System.Drawing.Size(91, 27);
-            this.crearButton.TabIndex = 4;
-            this.crearButton.Text = "Nuevo";
-            this.crearButton.UseVisualStyleBackColor = true;
-            this.crearButton.Click += new System.EventHandler(this.buttonNuevo_Click);
+            this.BtnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCrear.Location = new System.Drawing.Point(322, 53);
+            this.BtnCrear.Name = "BtnCrear";
+            this.BtnCrear.Size = new System.Drawing.Size(91, 27);
+            this.BtnCrear.TabIndex = 4;
+            this.BtnCrear.Text = "Nuevo";
+            this.BtnCrear.UseVisualStyleBackColor = true;
+            this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
             // ListaDeEmpleadosControl
             // 
@@ -87,7 +87,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             // 
             this.ClientSize = new System.Drawing.Size(463, 585);
             this.Controls.Add(this.ListaDeEmpleadosControl);
-            this.Controls.Add(this.crearButton);
+            this.Controls.Add(this.BtnCrear);
             this.Controls.Add(this.filtroTextBox);
             this.Controls.Add(this.labelBuscador);
             this.Controls.Add(this.labelPersonal);
@@ -103,7 +103,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         private System.Windows.Forms.Label labelPersonal;
         private System.Windows.Forms.Label labelBuscador;
         private System.Windows.Forms.TextBox filtroTextBox;
-        private System.Windows.Forms.Button crearButton;
+        private System.Windows.Forms.Button BtnCrear;
         private ListaDeEmpleadosControl ListaDeEmpleadosControl;
     }
 }

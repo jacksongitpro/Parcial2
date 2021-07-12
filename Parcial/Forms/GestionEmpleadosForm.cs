@@ -24,7 +24,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
 
             //Nos registramos a los eventos.
             filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
-            crearButton.Click += CrearButton_Click;
+            BtnCrear.Click += BtnCrear_Click;
         }
 
         //Esto es un predicado.
@@ -48,12 +48,19 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             //Volvemos a aplicar el fitro
             AplicarFiltro();
         }
-        private void CrearButton_Click(object sender, EventArgs e)
+        private void BtnCrear_Click(object sender, EventArgs e)
         {           
             AltaEmpleadoForm form = new AltaEmpleadoForm();
             form.ShowDialog();
             RefrescarLista();
         }
+        //private void BtnCrear_Click(object sender, EventArgs e)
+        //{
+        //    this.Hide();
+        //    AltaEmpleadoForm AltaEmp = new AltaEmpleadoForm();
+        //    AltaEmp.ShowDialog();
+
+        //}
 
         private void FiltroTextBox_TextChanged(object sender, EventArgs e)
         {
@@ -69,11 +76,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         //        //panel.Controls.Add(label);
                 
         //    }
-        //}
-
-       
-
-
+        //}  
 
       
 
@@ -103,12 +106,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void buttonNuevo_Click(object sender, EventArgs e)
-        {
-
-        }
+        }        
 
         private void BuscartextBox_TextChanged(object sender, EventArgs e)
         {            
