@@ -35,7 +35,7 @@ namespace Parcial
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
@@ -99,23 +99,23 @@ namespace Parcial
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(556, 25);
+            this.label3.Location = new System.Drawing.Point(545, 25);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(90, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Bienvenido/a";
             // 
-            // label4
+            // labelNombreUsuario
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(675, 25);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.labelNombreUsuario.AutoSize = true;
+            this.labelNombreUsuario.Location = new System.Drawing.Point(643, 25);
+            this.labelNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNombreUsuario.Name = "labelNombreUsuario";
+            this.labelNombreUsuario.Size = new System.Drawing.Size(95, 17);
+            this.labelNombreUsuario.TabIndex = 6;
+            this.labelNombreUsuario.Text = "Administrador";
+            this.labelNombreUsuario.Click += new System.EventHandler(this.label4_Click);
             // 
             // linkLabel1
             // 
@@ -149,7 +149,7 @@ namespace Parcial
             this.ClientSize = new System.Drawing.Size(745, 378);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.labelNombreUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -173,7 +173,7 @@ namespace Parcial
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label labelNombreUsuario;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
     }

@@ -22,7 +22,11 @@ namespace Parcial
         {      
                  
             InitializeComponent();
-            Empleados = BaseDeDatos.Empleados;           
+            Empleados = BaseDeDatos.Empleados;
+            Usuarios = BaseDeDatos.Usuarios;
+            Usuario user = Usuarios.Find((Usuario admin) => admin.nombre != labelNombreUsuario.Text);
+            labelNombreUsuario.Text = user.nombre;
+
 
         }
 
@@ -34,11 +38,12 @@ namespace Parcial
             //personal1.Show();
 
         }
-
-        private void MenuPrincipal_Load(object sender, EventArgs e)
+        private void btnEspecialidades_Click(object sender, EventArgs e)
         {
-
-        }
+            this.Hide();
+            GestionEspecialidadesForm EspecialidadesForm = new GestionEspecialidadesForm();
+            EspecialidadesForm.ShowDialog();
+        }      
 
         private void Especialidades_Click(object sender, EventArgs e)
         {
@@ -62,8 +67,8 @@ namespace Parcial
 
         public void label4_Click(object sender, EventArgs e)
         {
-            Usuario user = Usuarios.Find((Usuario admin) => admin.nombre == label4.Text);
-            label4.Text = user.nombre;
+            Usuario user = Usuarios.Find((Usuario admin) => admin.nombre != labelNombreUsuario.Text);
+            labelNombreUsuario.Text = user.nombre;
 
         }
 
@@ -71,12 +76,11 @@ namespace Parcial
         {
 
         }
-
-        private void btnEspecialidades_Click(object sender, EventArgs e)
+        private void MenuPrincipal_Load(object sender, EventArgs e)
         {
-            //this.Hide();
-            GestionEspecialidadesForm EspecialidadesForm = new GestionEspecialidadesForm();
-            EspecialidadesForm.ShowDialog();
+
         }
+
+
     }
 }
