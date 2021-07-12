@@ -39,7 +39,7 @@ namespace Parcial
             // direccionTextBox
             // 
             this.direccionTextBox.Location = new System.Drawing.Point(125, 71);
-            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.direccionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.direccionTextBox.Name = "direccionTextBox";
             this.direccionTextBox.Size = new System.Drawing.Size(257, 22);
             this.direccionTextBox.TabIndex = 8;
@@ -58,7 +58,7 @@ namespace Parcial
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(125, 27);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(257, 22);
             this.nombreTextBox.TabIndex = 10;
@@ -77,12 +77,13 @@ namespace Parcial
             // guardarButton
             // 
             this.guardarButton.Location = new System.Drawing.Point(375, 119);
-            this.guardarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guardarButton.Margin = new System.Windows.Forms.Padding(4);
             this.guardarButton.Name = "guardarButton";
             this.guardarButton.Size = new System.Drawing.Size(100, 28);
             this.guardarButton.TabIndex = 11;
             this.guardarButton.Text = "Guardar";
             this.guardarButton.UseVisualStyleBackColor = true;
+            this.guardarButton.Click += new System.EventHandler(this.guardarButton_Click_1);
             // 
             // CrearDepartamento
             // 
@@ -94,7 +95,7 @@ namespace Parcial
             this.Controls.Add(this.label1);
             this.Controls.Add(this.direccionTextBox);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearDepartamento";
             this.Text = "Crear Departamento";
             this.Load += new System.EventHandler(this.CrearDepartamento_Load);

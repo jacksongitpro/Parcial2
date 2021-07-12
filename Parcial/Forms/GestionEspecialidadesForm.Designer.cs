@@ -34,7 +34,7 @@ namespace Parcial.Forms
             this.labelEspecialidades = new System.Windows.Forms.Label();
             this.labelBuscar = new System.Windows.Forms.Label();
             this.filtroTextBox = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnCrear = new System.Windows.Forms.Button();
             this.ListaDeEspecialidadesControl = new Parcial.Forms.Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl();
             this.SuspendLayout();
             // 
@@ -66,15 +66,15 @@ namespace Parcial.Forms
             this.filtroTextBox.TabIndex = 2;
             this.filtroTextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // btnBuscar
+            // btnCrear
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(290, 47);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(93, 30);
-            this.btnBuscar.TabIndex = 3;
-            this.btnBuscar.Text = "Nuevo";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.btnCrear.Location = new System.Drawing.Point(290, 47);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(93, 30);
+            this.btnCrear.TabIndex = 3;
+            this.btnCrear.Text = "Nuevo";
+            this.btnCrear.UseVisualStyleBackColor = true;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
             // 
             // ListaDeEspecialidadesControl
             // 
@@ -89,7 +89,7 @@ namespace Parcial.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(567, 590);
             this.Controls.Add(this.ListaDeEspecialidadesControl);
-            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnCrear);
             this.Controls.Add(this.filtroTextBox);
             this.Controls.Add(this.labelBuscar);
             this.Controls.Add(this.labelEspecialidades);
@@ -106,7 +106,7 @@ namespace Parcial.Forms
         private System.Windows.Forms.Label labelEspecialidades;
         private System.Windows.Forms.Label labelBuscar;
         private System.Windows.Forms.TextBox filtroTextBox;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnCrear;
         private Forms.Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl listaDeEspecialidadesControl1;
         private Controles.ListaDeEspecialidades.ListaDeEspecialidadesControl ListaDeEspecialidadesControl;
     }

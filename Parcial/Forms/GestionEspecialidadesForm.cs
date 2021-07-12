@@ -59,9 +59,10 @@ namespace Parcial.Forms
             //Cuando cambia el texto del textbox, aplicamos el filtro
             AplicarFiltro();
         }
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void btnCrear_Click(object sender, EventArgs e)
         {
-
+            AltaEspecialidadesForm AltaEsp = new AltaEspecialidadesForm();
+            AltaEsp.ShowDialog();
         }
         //private void ListaDeEspecialidadesControl_Load(object sender, EventArgs e)
         //{
