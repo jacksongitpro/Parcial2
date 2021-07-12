@@ -51,7 +51,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.flowLayoutPanel1);
             this.Name = "ListaDeEmpleadosControl";
-            this.Size = new System.Drawing.Size(338, 508);
+            this.Size = new System.Drawing.Size(373, 543);
             this.Load += new System.EventHandler(this.ListaDeEmpleadosControl_Load);
             this.ResumeLayout(false);
 

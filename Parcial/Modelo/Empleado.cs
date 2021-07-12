@@ -11,7 +11,7 @@ namespace Parcial.Modelo
         public String Nombre { get; set; }
         public string Dni { get; set; }
         public string Matricula { get; set; }
-        public int Telefono { get; set; }
+        public string Telefono { get; set; }
         public string Email { get; set; }
         public string Calle { get; set; }
         public String Localidad { get; set; }

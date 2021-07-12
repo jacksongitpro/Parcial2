@@ -23,21 +23,18 @@ namespace Parcial //JacksonGarcia
             InitializeComponent();
             Usuarios = BaseDeDatos.Usuarios;
         }
-
         private void NombretextUsuario_TextChanged(object sender, EventArgs e)
         {
             throw new NotImplementedException();
         }
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-
             Usuario user = Usuarios.Find((Usuario admin) => admin.nombre == NombretextUsuario.Text && admin.password == textContraseña.Text);
             if (user != null)
             {                              
                 MenuPrincipal Form = new MenuPrincipal();
                 this.Hide();
-                Form.ShowDialog();                
+                Form.ShowDialog();               
 
             }
             else
@@ -47,12 +44,10 @@ namespace Parcial //JacksonGarcia
                 textContraseña.Clear();
                 NombretextUsuario.Focus();
                 return;
-
             }
         }
         private void linkLabel1RC_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
             RecuperacionForms Form = new RecuperacionForms();
             Form.ShowDialog();
         }

@@ -124,10 +124,10 @@
     <Compile Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosControl.Designer.cs">
       <DependentUpon>ListaDeEmpleadosControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Departamentos\CrearDepartamento.cs">
+    <Compile Include="Forms\CrearDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Departamentos\CrearDepartamento.Designer.cs">
+    <Compile Include="Forms\CrearDepartamento.Designer.cs">
       <DependentUpon>CrearDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GestionMaterial.cs">
@@ -181,6 +181,9 @@
       <DependentUpon>RecuperacionForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Usuario.cs" />
+    <EmbeddedResource Include="Forms\AltaEmpleadoForm.resx">
+      <DependentUpon>AltaEmpleadoForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controles\ListaDeEmpleados\ListaDeEmpleadosControl.resx">
       <DependentUpon>ListaDeEmpleadosControl.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,7 +217,7 @@
     <EmbeddedResource Include="Forms\Controles\ListaDeMat\ListaDeMatItem.resx">
       <DependentUpon>ListaDeMatItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Departamentos\CrearDepartamento.resx">
+    <EmbeddedResource Include="Forms\CrearDepartamento.resx">
       <DependentUpon>CrearDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GestionMaterial.resx">
