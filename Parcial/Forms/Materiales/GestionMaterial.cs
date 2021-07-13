@@ -65,5 +65,10 @@ namespace Parcial
         {
 
         }
+
+        private void crearButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

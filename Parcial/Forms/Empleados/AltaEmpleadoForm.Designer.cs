@@ -132,7 +132,7 @@ namespace Parcial.Forms
             this.labeldescriptiva.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labeldescriptiva.Location = new System.Drawing.Point(265, 127);
             this.labeldescriptiva.Name = "labeldescriptiva";
-            this.labeldescriptiva.Size = new System.Drawing.Size(42, 16);
+            this.labeldescriptiva.Size = new System.Drawing.Size(37, 15);
             this.labeldescriptiva.TabIndex = 7;
             this.labeldescriptiva.Text = "descr";
             // 
@@ -278,6 +278,7 @@ namespace Parcial.Forms
             this.guardarButton.TabIndex = 23;
             this.guardarButton.Text = "Guardar";
             this.guardarButton.UseVisualStyleBackColor = true;
+            this.guardarButton.Click += new System.EventHandler(this.guardarButton_Click_1);
             // 
             // AltaEmpleadoForm
             // 

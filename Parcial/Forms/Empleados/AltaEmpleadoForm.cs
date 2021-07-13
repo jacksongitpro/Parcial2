@@ -19,7 +19,6 @@ namespace Parcial.Forms
             guardarButton.Click += GuardarButton_Click;
             comboBoxEspecialidad.DataSource = BaseDeDatos.Especialidades;
             comboBoxEspecialidad.DisplayMember = "Nombre";
-            //labeldescriptiva.Text += comboEspecialidades_SelectedValueChanged;
         }
 
         private void GuardarButton_Click(object sender, EventArgs e)
@@ -28,21 +27,22 @@ namespace Parcial.Forms
             //En la vida real, hay que validarlos antes de hacer esto.            
             Empleado empleado = new Empleado()
             {
-                Nombre = NombretextBox.Text,                
+                Nombre = NombretextBox.Text,
                 Dni = DnitexBox.Text,
                 Matricula = textBoxMatricula.Text,
                 Telefono = textBoxTelefono.Text,
                 Email = textBoxEmail.Text,
                 Calle = CalletextBox.Text,
                 Localidad = labelLocalidad.Text,
-                Provincia = labelPovincia.Text,               
-                //Especialidad = comboBoxEspecialidad.
+                Provincia = labelPovincia.Text,
+                Especialidad = (Especialidad)comboBoxEspecialidad.SelectedItem
+
                 //labeldescriptiva.Text = comboBoxEspecialidad.DisplayMember = "Descripcion";
 
             };
             BaseDeDatos.Empleados.Add(empleado);
-            Close();           
-           
+            Close();
+
         }
         private void comboEspecialidades_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -55,13 +55,24 @@ namespace Parcial.Forms
         }
         private void DnitexBox_TextChanged(object sender, EventArgs e)
         {
-            Empleado empleado = BaseDeDatos.Empleados.Find((Empleado emp) => emp.Dni != DnitexBox.Text);
-            if (empleado.Dni == DnitexBox.Text )
-            {
-                MessageBox.Show("El Empleado Ya existe");
-                DnitexBox.Clear();
-                DnitexBox.Focus();
-            }
+            //if (BaseDeDatos.Empleados.Find((Empleado x) => x.Dni == empleado.Dni) == null;
+            //    {
+            //    BaseDeDatos.Empleados.Add(x);
+            //}
+            //else MessageBox.Show("El Empleado Ya existe");
+
+            //Empleado empleado = BaseDeDatos.Empleados.Find((Empleado emp) => emp.Dni != DnitexBox.Text);
+            //if (empleado.Dni == DnitexBox.Text)
+            //{
+            //    MessageBox.Show("El Empleado Ya existe");
+            //    DnitexBox.Clear();
+            //    DnitexBox.Focus();
+            //}
+        }
+
+        private void guardarButton_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -78,6 +78,7 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             this.crearButton.TabIndex = 3;
             this.crearButton.Text = "Nuevo";
             this.crearButton.UseVisualStyleBackColor = true;
+            this.crearButton.Click += new System.EventHandler(this.crearButton_Click_1);
             // 
             // listaDeDeptosControl
             // 
