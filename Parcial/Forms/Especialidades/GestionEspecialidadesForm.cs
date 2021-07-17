@@ -22,7 +22,14 @@ namespace Parcial.Forms
             InitializeComponent();
             ListaDeEspecialidadesControl.SetItems(BaseDeDatos.Especialidades);
             filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
+            btnCrear.Click += CrearButton_Click;
         }
+
+        private void BtnCrear_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         bool FiltroDeEspecialidades(Especialidad especialidad)
         {
             string filtro = filtroTextBox.Text.ToUpper();
@@ -33,7 +40,7 @@ namespace Parcial.Forms
         void AplicarFiltro()
         {
             //Usamos la funcion que creamos en el control personalizado.
-            ListaDeEspecialidadesControl.Filtrar(FiltroDeEspecialidades);
+            ListaDeEspecialidadesControl.FiltrarEspecialidad(FiltroDeEspecialidades);
         }
         void RefrescarLista()
         {
@@ -46,29 +53,24 @@ namespace Parcial.Forms
         private void CrearButton_Click(object sender, EventArgs e)
         {
             //Creamos el form
-            AltaEspecialidadesForm form = new AltaEspecialidadesForm();
-
-            //Usamos ShowDialog para que esta se bloquee hasta que terminen de usar el form de creacion.
-            form.ShowDialog();
+            AltaEspecialidadesForm Altaform = new AltaEspecialidadesForm();          
+            Altaform.ShowDialog();
+            RefrescarLista();
 
             //cuando cerro la ventana de creacion, refrescamos la lista de items.
-            RefrescarLista();
+
         }
         private void FiltroTextBox_TextChanged(object sender, EventArgs e)
         {
             //Cuando cambia el texto del textbox, aplicamos el filtro
             AplicarFiltro();
         }
-        private void btnCrear_Click(object sender, EventArgs e)
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            AltaEspecialidadesForm AltaEsp = new AltaEspecialidadesForm();
-            AltaEsp.ShowDialog();
+            MenuPrincipal Form = new MenuPrincipal();
+            this.Hide();
+            Form.ShowDialog();
         }
-        //private void ListaDeEspecialidadesControl_Load(object sender, EventArgs e)
-        //{
-
-        //}
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -81,6 +83,13 @@ namespace Parcial.Forms
         private void FormEspecialidades_Load(object sender, EventArgs e)
         {
 
+        }       
+
+        private void labelBuscar_Click(object sender, EventArgs e)
+        {
+
         }
+
+       
     }
 }

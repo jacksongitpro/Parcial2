@@ -27,7 +27,7 @@ namespace Parcial.Forms
 
         }
 
-        //La logica de seteo de persona.
+        //La logica de seteo de Empleado.
         void SetEmpleado(Empleado p)
         {
             //seteamos la persona.

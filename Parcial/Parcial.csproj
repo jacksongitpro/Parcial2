@@ -180,6 +180,9 @@
       <DependentUpon>RecuperacionForms.cs</DependentUpon>
     </Compile>
     <Compile Include="Modelo\Usuario.cs" />
+    <EmbeddedResource Include="Forms\Controles\ListaDeEspecialidades\ListaDeEspecialidadesItems.resx">
+      <DependentUpon>ListaDeEspecialidadesItems.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Empleados\AltaEmpleadoForm.resx">
       <DependentUpon>AltaEmpleadoForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,6 +197,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Empleados\DetalleEmpleadoForm.resx">
       <DependentUpon>DetalleEmpleadoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Especialidades\AltaEspecialidadesForm.resx">
+      <DependentUpon>AltaEspecialidadesForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Especialidades\GestionEspecialidadesForm.resx">
       <DependentUpon>GestionEspecialidadesForm.cs</DependentUpon>

@@ -31,7 +31,7 @@ namespace Parcial.Forms.Controles.ListaDeEspecialidades
             //Seteamos la persona que tenemos almacenada.
             Especialidad = especialidad;
             //Actualizamos el label con la info necesaria.
-            NombreLabel.Text = $"{Especialidad.Nombre} {Especialidad.Descripcion}";
+            NombreLabel.Text = $"{Especialidad.Nombre} ";
             Descripcionlabel.Text = $"{Especialidad.Descripcion}";
 
         }

@@ -36,6 +36,7 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             this.filtroTextBox = new System.Windows.Forms.TextBox();
             this.crearButton = new System.Windows.Forms.Button();
             this.listaDeDeptosControl = new Parcial.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // label1
@@ -62,16 +63,16 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             // 
             // filtroTextBox
             // 
-            this.filtroTextBox.Location = new System.Drawing.Point(109, 84);
+            this.filtroTextBox.Location = new System.Drawing.Point(97, 83);
             this.filtroTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.filtroTextBox.Name = "filtroTextBox";
-            this.filtroTextBox.Size = new System.Drawing.Size(257, 22);
+            this.filtroTextBox.Size = new System.Drawing.Size(200, 22);
             this.filtroTextBox.TabIndex = 2;
             this.filtroTextBox.TextChanged += new System.EventHandler(this.filtroTextBox_TextChanged_1);
             // 
             // crearButton
             // 
-            this.crearButton.Location = new System.Drawing.Point(376, 81);
+            this.crearButton.Location = new System.Drawing.Point(305, 80);
             this.crearButton.Margin = new System.Windows.Forms.Padding(4);
             this.crearButton.Name = "crearButton";
             this.crearButton.Size = new System.Drawing.Size(100, 28);
@@ -86,14 +87,26 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
             this.listaDeDeptosControl.Location = new System.Drawing.Point(32, 133);
             this.listaDeDeptosControl.Margin = new System.Windows.Forms.Padding(4);
             this.listaDeDeptosControl.Name = "listaDeDeptosControl";
-            this.listaDeDeptosControl.Size = new System.Drawing.Size(313, 446);
+            this.listaDeDeptosControl.Size = new System.Drawing.Size(373, 446);
             this.listaDeDeptosControl.TabIndex = 4;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(323, 586);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(60, 21);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Volver";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // GestionMaterial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 597);
+            this.ClientSize = new System.Drawing.Size(489, 612);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.listaDeDeptosControl);
             this.Controls.Add(this.crearButton);
             this.Controls.Add(this.filtroTextBox);
@@ -114,5 +127,6 @@ namespace Parcial//.Forms.Controles.ListaDeDeptos.ListaDeDeptosControl
         private System.Windows.Forms.TextBox filtroTextBox;
         private System.Windows.Forms.Button crearButton;
         private Forms.Controles.ListaDeDeptos.ListaDeDeptosControl listaDeDeptosControl;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

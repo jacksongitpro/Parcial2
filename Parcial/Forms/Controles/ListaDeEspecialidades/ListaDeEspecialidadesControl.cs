@@ -43,7 +43,7 @@ namespace Parcial.Forms.Controles.ListaDeEspecialidades
                 flowLayoutPanel1.Controls.Add(item);
             }
         }
-        public void Filtrar(Predicate<Especialidad> predicate)
+        public void FiltrarEspecialidad(Predicate<Especialidad> predicate)
         {
             //usamos el predicado para setear la propiedad de visible segun su resultado 
             for (int i = 0; i < Items.Count; i++)
@@ -65,6 +65,11 @@ namespace Parcial.Forms.Controles.ListaDeEspecialidades
             {
                 flowLayoutPanel1.Controls[i].Width = flowLayoutPanel1.Width - 25;
             }
+        }
+
+        private void flowLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

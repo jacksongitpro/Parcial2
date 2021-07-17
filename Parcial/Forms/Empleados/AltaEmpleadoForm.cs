@@ -24,7 +24,7 @@ namespace Parcial.Forms
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             //Creo el empleado usando los valores provistos
-            //En la vida real, hay que validarlos antes de hacer esto.            
+                     
             Empleado empleado = new Empleado()
             {
                 Nombre = NombretextBox.Text,
@@ -35,10 +35,9 @@ namespace Parcial.Forms
                 Calle = CalletextBox.Text,
                 Localidad = labelLocalidad.Text,
                 Provincia = labelPovincia.Text,
-                Especialidad = (Especialidad)comboBoxEspecialidad.SelectedItem
-
-                //labeldescriptiva.Text = comboBoxEspecialidad.DisplayMember = "Descripcion";
-
+                Especialidad = (Especialidad)comboBoxEspecialidad.SelectedItem,
+                
+            
             };
             BaseDeDatos.Empleados.Add(empleado);
             Close();
@@ -47,7 +46,6 @@ namespace Parcial.Forms
         private void comboEspecialidades_SelectedValueChanged(object sender, EventArgs e)
         {
             Especialidad p = (Especialidad)comboBoxEspecialidad.SelectedItem;
-            labeldescriptiva.Text = $"{p.Descripcion}";
         }
         private void labelContacto_Click(object sender, EventArgs e)
         {
@@ -55,22 +53,30 @@ namespace Parcial.Forms
         }
         private void DnitexBox_TextChanged(object sender, EventArgs e)
         {
-            //if (BaseDeDatos.Empleados.Find((Empleado x) => x.Dni == empleado.Dni) == null;
-            //    {
-            //    BaseDeDatos.Empleados.Add(x);
-            //}
-            //else MessageBox.Show("El Empleado Ya existe");
-
-            //Empleado empleado = BaseDeDatos.Empleados.Find((Empleado emp) => emp.Dni != DnitexBox.Text);
-            //if (empleado.Dni == DnitexBox.Text)
-            //{
-            //    MessageBox.Show("El Empleado Ya existe");
-            //    DnitexBox.Clear();
-            //    DnitexBox.Focus();
-            //}
+          
         }
 
         private void guardarButton_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labeldescriptiva_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void AltaEmpleadoForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxEspecialidad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelEspecialidad_Click(object sender, EventArgs e)
         {
 
         }

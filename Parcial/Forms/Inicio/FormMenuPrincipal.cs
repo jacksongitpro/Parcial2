@@ -32,9 +32,11 @@ namespace Parcial
 
         private void buttonpersonal_Click(object sender, EventArgs e)
         {
+            this.Hide();
             GestionPersonalForm personalform = new GestionPersonalForm();
             personalform.ShowDialog();
-           
+            
+
             //personal1.Show();
 
         }
@@ -47,6 +49,7 @@ namespace Parcial
 
         private void Especialidades_Click(object sender, EventArgs e)
         {
+            this.Hide();
             GestionMaterial GM = new GestionMaterial();
             GM.ShowDialog();
         }

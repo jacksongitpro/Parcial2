@@ -70,5 +70,12 @@ namespace Parcial
         {
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MenuPrincipal Form = new MenuPrincipal();
+            this.Hide();
+            Form.ShowDialog();
+        }
     }
 }

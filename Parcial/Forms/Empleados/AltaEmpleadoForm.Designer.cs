@@ -35,8 +35,6 @@ namespace Parcial.Forms
             this.DniLabel = new System.Windows.Forms.Label();
             this.Matriculalabel = new System.Windows.Forms.Label();
             this.labelContacto = new System.Windows.Forms.Label();
-            this.labelDescription = new System.Windows.Forms.Label();
-            this.labeldescriptiva = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.labelTelefono = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
@@ -74,6 +72,7 @@ namespace Parcial.Forms
             this.labelEspecialidad.Size = new System.Drawing.Size(135, 25);
             this.labelEspecialidad.TabIndex = 1;
             this.labelEspecialidad.Text = "Especialidad";
+            this.labelEspecialidad.Click += new System.EventHandler(this.labelEspecialidad_Click);
             // 
             // labelNombre
             // 
@@ -115,26 +114,6 @@ namespace Parcial.Forms
             this.labelContacto.TabIndex = 5;
             this.labelContacto.Text = "Contacto";
             this.labelContacto.Click += new System.EventHandler(this.labelContacto_Click);
-            // 
-            // labelDescription
-            // 
-            this.labelDescription.AutoSize = true;
-            this.labelDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDescription.Location = new System.Drawing.Point(264, 93);
-            this.labelDescription.Name = "labelDescription";
-            this.labelDescription.Size = new System.Drawing.Size(110, 20);
-            this.labelDescription.TabIndex = 6;
-            this.labelDescription.Text = "Descripcion";
-            // 
-            // labeldescriptiva
-            // 
-            this.labeldescriptiva.AutoSize = true;
-            this.labeldescriptiva.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeldescriptiva.Location = new System.Drawing.Point(265, 127);
-            this.labeldescriptiva.Name = "labeldescriptiva";
-            this.labeldescriptiva.Size = new System.Drawing.Size(37, 15);
-            this.labeldescriptiva.TabIndex = 7;
-            this.labeldescriptiva.Text = "descr";
             // 
             // label9
             // 
@@ -224,10 +203,11 @@ namespace Parcial.Forms
             // comboBoxEspecialidad
             // 
             this.comboBoxEspecialidad.FormattingEnabled = true;
-            this.comboBoxEspecialidad.Location = new System.Drawing.Point(267, 47);
+            this.comboBoxEspecialidad.Location = new System.Drawing.Point(267, 51);
             this.comboBoxEspecialidad.Name = "comboBoxEspecialidad";
             this.comboBoxEspecialidad.Size = new System.Drawing.Size(199, 24);
             this.comboBoxEspecialidad.TabIndex = 17;
+            this.comboBoxEspecialidad.SelectedIndexChanged += new System.EventHandler(this.comboBoxEspecialidad_SelectedIndexChanged);
             // 
             // textBoxTelefono
             // 
@@ -301,8 +281,6 @@ namespace Parcial.Forms
             this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.labelTelefono);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.labeldescriptiva);
-            this.Controls.Add(this.labelDescription);
             this.Controls.Add(this.labelContacto);
             this.Controls.Add(this.Matriculalabel);
             this.Controls.Add(this.DniLabel);
@@ -311,6 +289,7 @@ namespace Parcial.Forms
             this.Controls.Add(this.InfoLabel);
             this.Name = "AltaEmpleadoForm";
             this.Text = "AltaEmpleado";
+            this.Load += new System.EventHandler(this.AltaEmpleadoForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,8 +303,6 @@ namespace Parcial.Forms
         private System.Windows.Forms.Label DniLabel;
         private System.Windows.Forms.Label Matriculalabel;
         private System.Windows.Forms.Label labelContacto;
-        private System.Windows.Forms.Label labelDescription;
-        private System.Windows.Forms.Label labeldescriptiva;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label labelTelefono;
         private System.Windows.Forms.Label EmailLabel;

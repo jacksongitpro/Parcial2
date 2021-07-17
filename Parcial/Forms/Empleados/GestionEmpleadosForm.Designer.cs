@@ -33,6 +33,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             this.labelBuscador = new System.Windows.Forms.Label();
             this.filtroTextBox = new System.Windows.Forms.TextBox();
             this.BtnCrear = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.ListaDeEmpleadosControl = new Parcial.Forms.Controles.ListaDeEmpleados.ListaDeEmpleadosControl();
             this.SuspendLayout();
             // 
@@ -76,16 +77,28 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             this.BtnCrear.UseVisualStyleBackColor = true;
             this.BtnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(355, 563);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(48, 17);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Volver";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // ListaDeEmpleadosControl
             // 
             this.ListaDeEmpleadosControl.Location = new System.Drawing.Point(12, 92);
             this.ListaDeEmpleadosControl.Name = "ListaDeEmpleadosControl";
-            this.ListaDeEmpleadosControl.Size = new System.Drawing.Size(392, 503);
+            this.ListaDeEmpleadosControl.Size = new System.Drawing.Size(401, 468);
             this.ListaDeEmpleadosControl.TabIndex = 5;
             // 
             // GestionPersonalForm
             // 
-            this.ClientSize = new System.Drawing.Size(463, 585);
+            this.ClientSize = new System.Drawing.Size(459, 605);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.ListaDeEmpleadosControl);
             this.Controls.Add(this.BtnCrear);
             this.Controls.Add(this.filtroTextBox);
@@ -105,5 +118,6 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         private System.Windows.Forms.TextBox filtroTextBox;
         private System.Windows.Forms.Button BtnCrear;
         private ListaDeEmpleadosControl ListaDeEmpleadosControl;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

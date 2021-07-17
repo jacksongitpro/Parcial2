@@ -16,7 +16,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
 {
     public partial class GestionPersonalForm : Form
     {
-        List<Empleado> Empleados;
+        //List<Empleado> Empleados;
         public GestionPersonalForm()
         {
             InitializeComponent();
@@ -54,31 +54,13 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
             form.ShowDialog();
             RefrescarLista();
         }
-        //private void BtnCrear_Click(object sender, EventArgs e)
-        //{
-        //    this.Hide();
-        //    AltaEmpleadoForm AltaEmp = new AltaEmpleadoForm();
-        //    AltaEmp.ShowDialog();
-
-        //}
+      
 
         private void FiltroTextBox_TextChanged(object sender, EventArgs e)
         {
             //Cuando cambia el texto del textbox, aplicamos el filtro
             AplicarFiltro();
-        }
-        //void ActualizarListado()
-        //{
-        //    for (int i = 0; i < Empleados.Count;i++ )
-        //    {
-        //        Label label = new Label();
-        //        label.Text = Empleados[i].Nombre;
-        //        //panel.Controls.Add(label);
-                
-        //    }
-        //}  
-
-      
+        }     
 
         private void listaDePersonasControl_Load(object sender, EventArgs e)
         {
@@ -88,10 +70,7 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         private void GestionPersonalForm_Load(object sender, EventArgs e)
         {
 
-        }
-
-        //private System.Windows.Forms.TextBox BuscartextBox;
-        //private System.Windows.Forms.Button crearButton;
+        }   
 
         private void NombresPanel_Paint(object sender, PaintEventArgs e)
         {
@@ -109,10 +88,16 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         }        
 
         private void BuscartextBox_TextChanged(object sender, EventArgs e)
-        {            
-                //string letras = filtroTextBox.Text.ToUpper();
-                //List<Empleado> Coincidencias = Empleados.FindAll((Empleado elem) => elem.Nombre.StartsWith(letras.ToUpper()));
+        {           
+               
                         
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MenuPrincipal Form = new MenuPrincipal();
+            this.Hide();
+            Form.ShowDialog();
         }
     }
 
