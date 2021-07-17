@@ -15,10 +15,9 @@ namespace Parcial
         [STAThread]
         static void Main()
         {
-            BaseDeDatos.CargarUsuario();//JacksonGarcia
-            BaseDeDatos.CargarEspecialidad();//JacksonGarcia
-            BaseDeDatos.Cargar();//Agustin
-            BaseDeDatos.CargarDM();//Jehiel
+            BaseDeDatos.CargarUsuario();//JacksonGarcia            
+            BaseDeDatos.Cargar();//JacksonG
+            BaseDeDatos.CargarDM();//Agustin
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);            
             Application.Run(new Ingreso());           

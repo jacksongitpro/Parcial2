@@ -56,6 +56,7 @@
             this.DescEspecialidad_label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.nomEspecialidad_label11 = new System.Windows.Forms.Label();
+            this.EspecialidadLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -132,6 +133,7 @@
             this.MatriculaInf_label6.Size = new System.Drawing.Size(46, 17);
             this.MatriculaInf_label6.TabIndex = 5;
             this.MatriculaInf_label6.Text = "label6";
+            this.MatriculaInf_label6.Click += new System.EventHandler(this.MatriculaInf_label6_Click);
             // 
             // Dniinf_label5
             // 
@@ -195,10 +197,10 @@
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Location = new System.Drawing.Point(400, 325);
+            this.panel2.Location = new System.Drawing.Point(400, 315);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(334, 182);
+            this.panel2.Size = new System.Drawing.Size(346, 192);
             this.panel2.TabIndex = 5;
             // 
             // ProvinciaDom_label
@@ -207,9 +209,8 @@
             this.ProvinciaDom_label.Location = new System.Drawing.Point(189, 133);
             this.ProvinciaDom_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProvinciaDom_label.Name = "ProvinciaDom_label";
-            this.ProvinciaDom_label.Size = new System.Drawing.Size(54, 17);
+            this.ProvinciaDom_label.Size = new System.Drawing.Size(0, 21);
             this.ProvinciaDom_label.TabIndex = 6;
-            this.ProvinciaDom_label.Text = "label19";
             // 
             // LocalidadDom_label18
             // 
@@ -217,9 +218,8 @@
             this.LocalidadDom_label18.Location = new System.Drawing.Point(189, 78);
             this.LocalidadDom_label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LocalidadDom_label18.Name = "LocalidadDom_label18";
-            this.LocalidadDom_label18.Size = new System.Drawing.Size(54, 17);
+            this.LocalidadDom_label18.Size = new System.Drawing.Size(0, 21);
             this.LocalidadDom_label18.TabIndex = 5;
-            this.LocalidadDom_label18.Text = "label18";
             // 
             // CalleDom__label17
             // 
@@ -227,9 +227,8 @@
             this.CalleDom__label17.Location = new System.Drawing.Point(183, 21);
             this.CalleDom__label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CalleDom__label17.Name = "CalleDom__label17";
-            this.CalleDom__label17.Size = new System.Drawing.Size(54, 17);
+            this.CalleDom__label17.Size = new System.Drawing.Size(0, 21);
             this.CalleDom__label17.TabIndex = 4;
-            this.CalleDom__label17.Text = "label17";
             // 
             // label16
             // 
@@ -274,7 +273,7 @@
             this.panel3.Location = new System.Drawing.Point(24, 325);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(281, 182);
+            this.panel3.Size = new System.Drawing.Size(309, 182);
             this.panel3.TabIndex = 5;
             // 
             // EmailContacto_label10
@@ -283,9 +282,8 @@
             this.EmailContacto_label10.Location = new System.Drawing.Point(124, 96);
             this.EmailContacto_label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmailContacto_label10.Name = "EmailContacto_label10";
-            this.EmailContacto_label10.Size = new System.Drawing.Size(54, 17);
+            this.EmailContacto_label10.Size = new System.Drawing.Size(0, 21);
             this.EmailContacto_label10.TabIndex = 3;
-            this.EmailContacto_label10.Text = "label10";
             // 
             // TelContacto_label9
             // 
@@ -293,9 +291,8 @@
             this.TelContacto_label9.Location = new System.Drawing.Point(149, 21);
             this.TelContacto_label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TelContacto_label9.Name = "TelContacto_label9";
-            this.TelContacto_label9.Size = new System.Drawing.Size(46, 17);
+            this.TelContacto_label9.Size = new System.Drawing.Size(0, 21);
             this.TelContacto_label9.TabIndex = 2;
-            this.TelContacto_label9.Text = "label9";
             // 
             // label8
             // 
@@ -322,10 +319,11 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.EspecialidadLabel);
             this.panel4.Controls.Add(this.flowLayoutPanel1);
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.nomEspecialidad_label11);
-            this.panel4.Location = new System.Drawing.Point(400, 71);
+            this.panel4.Location = new System.Drawing.Point(399, 73);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(334, 179);
@@ -355,7 +353,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 23);
+            this.label12.Location = new System.Drawing.Point(1, 36);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 18);
@@ -366,12 +364,21 @@
             // 
             this.nomEspecialidad_label11.AutoSize = true;
             this.nomEspecialidad_label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomEspecialidad_label11.Location = new System.Drawing.Point(4, 5);
+            this.nomEspecialidad_label11.Location = new System.Drawing.Point(49, 61);
             this.nomEspecialidad_label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomEspecialidad_label11.Name = "nomEspecialidad_label11";
-            this.nomEspecialidad_label11.Size = new System.Drawing.Size(61, 18);
+            this.nomEspecialidad_label11.Size = new System.Drawing.Size(0, 23);
             this.nomEspecialidad_label11.TabIndex = 0;
-            this.nomEspecialidad_label11.Text = "label11";
+            // 
+            // EspecialidadLabel
+            // 
+            this.EspecialidadLabel.AutoSize = true;
+            this.EspecialidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EspecialidadLabel.Location = new System.Drawing.Point(0, 6);
+            this.EspecialidadLabel.Name = "EspecialidadLabel";
+            this.EspecialidadLabel.Size = new System.Drawing.Size(130, 24);
+            this.EspecialidadLabel.TabIndex = 3;
+            this.EspecialidadLabel.Text = "Especialidad";
             // 
             // DetalleEmpleadoForm
             // 
@@ -434,5 +441,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label nomEspecialidad_label11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Label EspecialidadLabel;
     }
 }

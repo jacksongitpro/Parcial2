@@ -34,9 +34,18 @@ namespace Parcial.Forms
             Empleado = p;
 
             //Actualizamos los labels.
-            this.Nombreinf_label4.Text = Empleado.Nombre;            
-            this.Dniinf_label5.Text = $"{Empleado.Dni}";
-           
+            Nombreinf_label4.Text = Empleado.Nombre;            
+            Dniinf_label5.Text = $"{Empleado.Dni}";
+            MatriculaInf_label6.Text = Empleado.Matricula;
+            DescEspecialidad_label13.Text = Empleado.Especialidad.Descripcion;
+            EspecialidadLabel.Text = Empleado.Especialidad.Nombre;
+            TelContacto_label9.Text = Empleado.Telefono;
+            EmailContacto_label10.Text = Empleado.Email;
+            CalleDom__label17.Text = Empleado.Calle;
+            LocalidadDom_label18.Text = Empleado.Localidad;
+            ProvinciaDom_label.Text = Empleado.Provincia;
+
+
         }
 
         private void DetalleEmpleadoForm_Load(object sender, EventArgs e)
@@ -50,6 +59,11 @@ namespace Parcial.Forms
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MatriculaInf_label6_Click(object sender, EventArgs e)
         {
 
         }

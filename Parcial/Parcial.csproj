@@ -171,7 +171,6 @@
     </Compile>
     <Compile Include="Modelo\Departamento.cs" />
     <Compile Include="Modelo\Material.cs" />
-    <Compile Include="Modelo\Persona.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Forms\Inicio\RecuperacionForms.cs">
