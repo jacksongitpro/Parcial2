@@ -17,15 +17,6 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
     {
         List<ListaDeEmpleadosItems> Items = new List<ListaDeEmpleadosItems>();
 
-        /*
-         Propiedades usadas para ListaDePersonasControl:
-            BorderStyle = FixedSingle
-         Propiedades usadas para flowLayoutPanel1:
-            AutoScroll = true
-            Dock = Fill
-            FlowDirection = TopDown
-            WrapContents = false
-        */
         public ListaDeEmpleadosControl()
         {
             InitializeComponent();
@@ -58,8 +49,6 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
                 Items[i].Visible = predicate(Items[i].Empleado);
             }
         }
-
-
         //Si ajustamos el ancho del panel, es necesario actualizar el ancho de los items tambien.
         void FlowLayoutPanel1_SizeChanged(object sender, EventArgs e)
         {
@@ -92,3 +81,12 @@ namespace Parcial.Forms.Controles.ListaDeEmpleados
         }
     }
 }
+/*
+ Propiedades usadas para ListaDePersonasControl:
+    BorderStyle = FixedSingle
+ Propiedades usadas para flowLayoutPanel1:
+    AutoScroll = true
+    Dock = Fill
+    FlowDirection = TopDown
+    WrapContents = false
+*/

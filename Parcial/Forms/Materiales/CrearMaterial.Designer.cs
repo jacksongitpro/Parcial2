@@ -40,17 +40,18 @@ namespace Parcial.Forms
             // guardarButton
             // 
             this.guardarButton.Location = new System.Drawing.Point(368, 96);
-            this.guardarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guardarButton.Margin = new System.Windows.Forms.Padding(4);
             this.guardarButton.Name = "guardarButton";
             this.guardarButton.Size = new System.Drawing.Size(100, 28);
             this.guardarButton.TabIndex = 16;
             this.guardarButton.Text = "Guardar";
             this.guardarButton.UseVisualStyleBackColor = true;
+            this.guardarButton.Click += new System.EventHandler(this.guardarButton_Click_1);
             // 
             // nombreTextBox
             // 
             this.nombreTextBox.Location = new System.Drawing.Point(119, 15);
-            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nombreTextBox.Name = "nombreTextBox";
             this.nombreTextBox.Size = new System.Drawing.Size(257, 22);
             this.nombreTextBox.TabIndex = 15;
@@ -80,7 +81,7 @@ namespace Parcial.Forms
             // cantidadNumericUpDown
             // 
             this.cantidadNumericUpDown.Location = new System.Drawing.Point(119, 62);
-            this.cantidadNumericUpDown.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cantidadNumericUpDown.Margin = new System.Windows.Forms.Padding(4);
             this.cantidadNumericUpDown.Name = "cantidadNumericUpDown";
             this.cantidadNumericUpDown.Size = new System.Drawing.Size(91, 22);
             this.cantidadNumericUpDown.TabIndex = 18;
@@ -95,10 +96,9 @@ namespace Parcial.Forms
             this.Controls.Add(this.guardarButton);
             this.Controls.Add(this.nombreTextBox);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CrearMaterial";
             this.Text = "Crear Material";
-            //this.Load += new System.EventHandler(this.CrearMaterial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cantidadNumericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

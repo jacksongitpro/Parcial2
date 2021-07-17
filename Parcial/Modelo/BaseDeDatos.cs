@@ -147,8 +147,8 @@ namespace Parcial.Modelo
         {
             Material mat = new Material()
             {
-                Nombre = "Material 1",
-                Cantidad = 0
+                Nombre = "Guantes Descartables",
+                Cantidad = 100
             };
 
             Departamento dep = new Departamento()
@@ -161,21 +161,21 @@ namespace Parcial.Modelo
             Departamentos.Add(dep);
             Materiales.Add(mat);
 
-            mat = new Material()
+            Material mat2 = new Material()
             {
-                Nombre = "Material 2",
-                Cantidad = 0
+                Nombre = "Inyectadoras",
+                Cantidad = 100
             };
 
             dep = new Departamento()
             {
                 Nombre = "Departamento Dos",
                 Direccion = "Calle Falsa 321",
-                Material = mat
+                Material = mat2
             };
 
             Departamentos.Add(dep);
-            Materiales.Add(mat);
+            Materiales.Add(mat2);
         }
     }
 }

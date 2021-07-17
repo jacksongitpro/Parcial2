@@ -46,12 +46,13 @@ namespace Parcial.Forms.Materiales
             this.crearButton.TabIndex = 7;
             this.crearButton.Text = "Nuevo";
             this.crearButton.UseVisualStyleBackColor = true;
+            this.crearButton.Click += new System.EventHandler(this.crearButton_Click_1);
             // 
             // filtroTextBox
             // 
             this.filtroTextBox.Location = new System.Drawing.Point(91, 78);
             this.filtroTextBox.Name = "filtroTextBox";
-            this.filtroTextBox.Size = new System.Drawing.Size(226, 20);
+            this.filtroTextBox.Size = new System.Drawing.Size(226, 23);
             this.filtroTextBox.TabIndex = 6;
             // 
             // label2
@@ -60,7 +61,7 @@ namespace Parcial.Forms.Materiales
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 79);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 16);
+            this.label2.Size = new System.Drawing.Size(81, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Buscar :";
             // 
@@ -70,7 +71,7 @@ namespace Parcial.Forms.Materiales
             this.nombreLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreLabel.Location = new System.Drawing.Point(14, 9);
             this.nombreLabel.Name = "nombreLabel";
-            this.nombreLabel.Size = new System.Drawing.Size(106, 37);
+            this.nombreLabel.Size = new System.Drawing.Size(132, 46);
             this.nombreLabel.TabIndex = 4;
             this.nombreLabel.Text = "label1";
             // 
@@ -80,7 +81,7 @@ namespace Parcial.Forms.Materiales
             this.direccionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionLabel.Location = new System.Drawing.Point(22, 50);
             this.direccionLabel.Name = "direccionLabel";
-            this.direccionLabel.Size = new System.Drawing.Size(51, 16);
+            this.direccionLabel.Size = new System.Drawing.Size(59, 20);
             this.direccionLabel.TabIndex = 8;
             this.direccionLabel.Text = "label3";
             // 
@@ -89,14 +90,16 @@ namespace Parcial.Forms.Materiales
             this.listaDeMatControl.BackColor = System.Drawing.SystemColors.Control;
             this.listaDeMatControl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listaDeMatControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.listaDeMatControl.Location = new System.Drawing.Point(14, 105);
+            this.listaDeMatControl.Location = new System.Drawing.Point(16, 103);
+            this.listaDeMatControl.Margin = new System.Windows.Forms.Padding(4);
             this.listaDeMatControl.Name = "listaDeMatControl";
             this.listaDeMatControl.Size = new System.Drawing.Size(410, 333);
             this.listaDeMatControl.TabIndex = 0;
+            this.listaDeMatControl.Load += new System.EventHandler(this.listaDeMatControl_Load);
             // 
             // DetalleDepartamento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(439, 450);
             this.Controls.Add(this.direccionLabel);

@@ -30,7 +30,6 @@ namespace Parcial.Forms.Controles.ListaDeMat
             {
                 ListaDeMatItem item = new ListaDeMatItem(materiales[i]);
                 item.Width = flowLayoutPanel1.Width - 25;
-
                 Items.Add(item);
                 flowLayoutPanel1.Controls.Add(item);
             }
@@ -43,7 +42,6 @@ namespace Parcial.Forms.Controles.ListaDeMat
                 Items[i].Visible = predicate(Items[i].Material);
             }
         }
-
         void FlowLayoutPanel1_SizeChanged(object sender, EventArgs e)
         {
             ActualizarAnchoDeItems();

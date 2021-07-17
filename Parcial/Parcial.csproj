@@ -142,10 +142,10 @@
     <Compile Include="Forms\Materiales\CrearMaterial.Designer.cs">
       <DependentUpon>CrearMaterial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Materiales\DetalleDepartamento.cs">
+    <Compile Include="Forms\Departamento\DetalleDepartamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Materiales\DetalleDepartamento.Designer.cs">
+    <Compile Include="Forms\Departamento\DetalleDepartamento.Designer.cs">
       <DependentUpon>DetalleDepartamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Inicio\MiCuenta.cs">
@@ -231,7 +231,7 @@
     <EmbeddedResource Include="Forms\Materiales\CrearMaterial.resx">
       <DependentUpon>CrearMaterial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Materiales\DetalleDepartamento.resx">
+    <EmbeddedResource Include="Forms\Departamento\DetalleDepartamento.resx">
       <DependentUpon>DetalleDepartamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Inicio\MiCuenta.resx">

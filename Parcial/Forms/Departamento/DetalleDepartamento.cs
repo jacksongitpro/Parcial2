@@ -20,19 +20,17 @@ namespace Parcial.Forms.Materiales
         {
             InitializeComponent();
 
-            listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
-
-            filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
-            crearButton.Click += CrearButton_Click;
         }
 
         public DetalleDepartamento(Departamento departamento)
         {
             InitializeComponent();
             SetDepto(departamento);
+            listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
+            filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
+            crearButton.Click += crearButton_Click_1;
 
         }
-
         void SetDepto(Departamento dep)
         {
             Departamento = dep;
@@ -59,18 +57,30 @@ namespace Parcial.Forms.Materiales
             AplicarFiltro();
         }
 
-        private void CrearButton_Click(object sender, EventArgs e)
+        private void crearButton_Click_1(object sender, EventArgs e)
         {
             CrearMaterial form = new Forms.CrearMaterial();
-
             form.ShowDialog();
-
             RefrescarLista();
+            
         }
-
         private void FiltroTextBox_TextChanged(object sender, EventArgs e)
         {
             AplicarFiltro();
+        }
+
+        //private void CrearButton_Click(object sender, EventArgs e)
+        //{
+        //    CrearMaterial form = new Forms.CrearMaterial();
+        //    form.ShowDialog();
+        //    RefrescarLista();
+        //}
+
+
+
+        private void listaDeMatControl_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

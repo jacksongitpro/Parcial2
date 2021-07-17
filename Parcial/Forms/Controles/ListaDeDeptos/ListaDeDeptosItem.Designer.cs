@@ -61,12 +61,12 @@ namespace Parcial.Controls.ListaDeDeptos
             // 
             // infoButton
             // 
-            this.infoButton.Location = new System.Drawing.Point(23, 98);
+            this.infoButton.Location = new System.Drawing.Point(227, 99);
             this.infoButton.Margin = new System.Windows.Forms.Padding(4);
             this.infoButton.Name = "infoButton";
             this.infoButton.Size = new System.Drawing.Size(100, 28);
             this.infoButton.TabIndex = 4;
-            this.infoButton.Text = "+ info";
+            this.infoButton.Text = "Ver";
             this.infoButton.UseVisualStyleBackColor = true;
             // 
             // nombreLabel
