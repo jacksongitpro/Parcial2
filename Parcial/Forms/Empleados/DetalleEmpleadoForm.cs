@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Parcial.Modelo;
 using Parcial.Forms;
+using System.IO;
 
 namespace Parcial.Forms
 {
@@ -66,6 +67,26 @@ namespace Parcial.Forms
         private void MatriculaInf_label6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            
+                string path = @"C:\Users\jacksong\Documents\ProgramacionLogica\Reporte.txt";
+                List<Empleado> Reporte = BaseDeDatos.Empleados;
+                List<string> Registros = new List<string>();
+
+                foreach (Empleado E in Reporte)
+                {
+                    Registros.Add($"{E.Matricula};{E.Dni};{E.Nombre};{E.Especialidad.Nombre};{E.Provincia}");
+                }
+                File.WriteAllLines(path, Registros);
+                Close();
+                MessageBox.Show("Reporte Generado Con exito");
+
+
+
+            
         }
     }
 }

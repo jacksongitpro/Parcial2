@@ -52,11 +52,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.EspecialidadLabel = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.DescEspecialidad_label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.nomEspecialidad_label11 = new System.Windows.Forms.Label();
-            this.EspecialidadLabel = new System.Windows.Forms.Label();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -209,7 +210,7 @@
             this.ProvinciaDom_label.Location = new System.Drawing.Point(189, 133);
             this.ProvinciaDom_label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProvinciaDom_label.Name = "ProvinciaDom_label";
-            this.ProvinciaDom_label.Size = new System.Drawing.Size(0, 21);
+            this.ProvinciaDom_label.Size = new System.Drawing.Size(0, 17);
             this.ProvinciaDom_label.TabIndex = 6;
             // 
             // LocalidadDom_label18
@@ -218,7 +219,7 @@
             this.LocalidadDom_label18.Location = new System.Drawing.Point(189, 78);
             this.LocalidadDom_label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LocalidadDom_label18.Name = "LocalidadDom_label18";
-            this.LocalidadDom_label18.Size = new System.Drawing.Size(0, 21);
+            this.LocalidadDom_label18.Size = new System.Drawing.Size(0, 17);
             this.LocalidadDom_label18.TabIndex = 5;
             // 
             // CalleDom__label17
@@ -227,7 +228,7 @@
             this.CalleDom__label17.Location = new System.Drawing.Point(183, 21);
             this.CalleDom__label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CalleDom__label17.Name = "CalleDom__label17";
-            this.CalleDom__label17.Size = new System.Drawing.Size(0, 21);
+            this.CalleDom__label17.Size = new System.Drawing.Size(0, 17);
             this.CalleDom__label17.TabIndex = 4;
             // 
             // label16
@@ -282,7 +283,7 @@
             this.EmailContacto_label10.Location = new System.Drawing.Point(124, 96);
             this.EmailContacto_label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EmailContacto_label10.Name = "EmailContacto_label10";
-            this.EmailContacto_label10.Size = new System.Drawing.Size(0, 21);
+            this.EmailContacto_label10.Size = new System.Drawing.Size(0, 17);
             this.EmailContacto_label10.TabIndex = 3;
             // 
             // TelContacto_label9
@@ -291,7 +292,7 @@
             this.TelContacto_label9.Location = new System.Drawing.Point(149, 21);
             this.TelContacto_label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TelContacto_label9.Name = "TelContacto_label9";
-            this.TelContacto_label9.Size = new System.Drawing.Size(0, 21);
+            this.TelContacto_label9.Size = new System.Drawing.Size(0, 17);
             this.TelContacto_label9.TabIndex = 2;
             // 
             // label8
@@ -328,6 +329,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(334, 179);
             this.panel4.TabIndex = 5;
+            // 
+            // EspecialidadLabel
+            // 
+            this.EspecialidadLabel.AutoSize = true;
+            this.EspecialidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EspecialidadLabel.Location = new System.Drawing.Point(0, 6);
+            this.EspecialidadLabel.Name = "EspecialidadLabel";
+            this.EspecialidadLabel.Size = new System.Drawing.Size(130, 24);
+            this.EspecialidadLabel.TabIndex = 3;
+            this.EspecialidadLabel.Text = "Especialidad";
             // 
             // flowLayoutPanel1
             // 
@@ -367,24 +378,25 @@
             this.nomEspecialidad_label11.Location = new System.Drawing.Point(49, 61);
             this.nomEspecialidad_label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nomEspecialidad_label11.Name = "nomEspecialidad_label11";
-            this.nomEspecialidad_label11.Size = new System.Drawing.Size(0, 23);
+            this.nomEspecialidad_label11.Size = new System.Drawing.Size(0, 18);
             this.nomEspecialidad_label11.TabIndex = 0;
             // 
-            // EspecialidadLabel
+            // btnReporte
             // 
-            this.EspecialidadLabel.AutoSize = true;
-            this.EspecialidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EspecialidadLabel.Location = new System.Drawing.Point(0, 6);
-            this.EspecialidadLabel.Name = "EspecialidadLabel";
-            this.EspecialidadLabel.Size = new System.Drawing.Size(130, 24);
-            this.EspecialidadLabel.TabIndex = 3;
-            this.EspecialidadLabel.Text = "Especialidad";
+            this.btnReporte.Location = new System.Drawing.Point(550, 514);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(197, 27);
+            this.btnReporte.TabIndex = 6;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
             // 
             // DetalleEmpleadoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 554);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
@@ -442,5 +454,6 @@
         private System.Windows.Forms.Label nomEspecialidad_label11;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Label EspecialidadLabel;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

@@ -35,6 +35,7 @@ namespace Parcial.Forms.Materiales
             this.nombreLabel = new System.Windows.Forms.Label();
             this.direccionLabel = new System.Windows.Forms.Label();
             this.listaDeMatControl = new Parcial.Forms.Controles.ListaDeMat.ListaDeMatControl();
+            this.btnReporte = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // crearButton
@@ -97,11 +98,22 @@ namespace Parcial.Forms.Materiales
             this.listaDeMatControl.TabIndex = 0;
             this.listaDeMatControl.Load += new System.EventHandler(this.listaDeMatControl_Load);
             // 
+            // btnReporte
+            // 
+            this.btnReporte.Location = new System.Drawing.Point(261, 443);
+            this.btnReporte.Name = "btnReporte";
+            this.btnReporte.Size = new System.Drawing.Size(165, 29);
+            this.btnReporte.TabIndex = 9;
+            this.btnReporte.Text = "Reporte";
+            this.btnReporte.UseVisualStyleBackColor = true;
+            this.btnReporte.Click += new System.EventHandler(this.btnReporte_Click);
+            // 
             // DetalleDepartamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 450);
+            this.ClientSize = new System.Drawing.Size(437, 472);
+            this.Controls.Add(this.btnReporte);
             this.Controls.Add(this.direccionLabel);
             this.Controls.Add(this.crearButton);
             this.Controls.Add(this.filtroTextBox);
@@ -123,5 +135,6 @@ namespace Parcial.Forms.Materiales
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label nombreLabel;
         private System.Windows.Forms.Label direccionLabel;
+        private System.Windows.Forms.Button btnReporte;
     }
 }

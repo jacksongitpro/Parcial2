@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Parcial.Modelo;
+using System.IO;
 
 namespace Parcial.Forms.Materiales
 {
@@ -19,7 +20,6 @@ namespace Parcial.Forms.Materiales
         public DetalleDepartamento()
         {
             InitializeComponent();
-
         }
 
         public DetalleDepartamento(Departamento departamento)
@@ -29,6 +29,7 @@ namespace Parcial.Forms.Materiales
             listaDeMatControl.SetMatItems(BaseDeDatos.Materiales);
             filtroTextBox.TextChanged += FiltroTextBox_TextChanged;
             crearButton.Click += crearButton_Click_1;
+            btnReporte.Click += btnReporte_Click;
 
         }
         void SetDepto(Departamento dep)
@@ -83,5 +84,22 @@ namespace Parcial.Forms.Materiales
 
         }
 
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            string path = @"C:\Users\jacksong\Documents\ProgramacionLogica\Reporte.txt";
+            List<Material> Reporte = BaseDeDatos.Materiales;
+            List<string> Registros = new List<string>();
+            
+            foreach (Material M in Reporte)
+            {
+                Registros.Add($"{M.Nombre};{M.Cantidad}");
+            }
+            File.WriteAllLines(path, Registros);
+            Close();
+            MessageBox.Show("Reporte Generado Con exito");
+            
+
+
+        }
     }
 }

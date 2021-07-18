@@ -149,33 +149,46 @@ namespace Parcial.Modelo
             {
                 Nombre = "Guantes Descartables",
                 Cantidad = 100
-            };
+            };        
 
-            Departamento dep = new Departamento()
+            Departamento Ginecologia = new Departamento()
             {
-                Nombre = "Departamento Uno",
-                Direccion = "Avenida Verdadera 789",
+                Nombre = "Departamento De Ginecologia",
+                Direccion = "Avenida Rivadavia",
                 Material = mat
             };
 
-            Departamentos.Add(dep);
+            Departamentos.Add(Ginecologia);
             Materiales.Add(mat);
 
             Material mat2 = new Material()
             {
                 Nombre = "Inyectadoras",
-                Cantidad = 100
+                Cantidad = 50
             };
 
-            dep = new Departamento()
+            Departamento Odontologia = new Departamento()
             {
-                Nombre = "Departamento Dos",
-                Direccion = "Calle Falsa 321",
+                Nombre = "Departamento De Odontologia",
+                Direccion = "Avenida Corrientes",
                 Material = mat2
             };
-
-            Departamentos.Add(dep);
+            Departamentos.Add(Odontologia);
             Materiales.Add(mat2);
+            Material mat3 = new Material()
+            {
+                Nombre = "Algodon",
+                Cantidad = 80
+            }; Materiales.Add(mat3);
+
+            Departamento Pediatria = new Departamento()
+            {
+                Nombre = "Departamento De Pediatria",
+                Direccion = "Avenida 9 de Julio",
+                Material = mat3
+            }; Departamentos.Add(Pediatria);
+
+
         }
     }
 }
