@@ -89,7 +89,11 @@ namespace Parcial.Forms.Materiales
             string path = @"C:\Users\jacksong\Documents\ProgramacionLogica\Reporte.txt";
             List<Material> Reporte = BaseDeDatos.Materiales;
             List<string> Registros = new List<string>();
-            
+            if (!File.Exists(path))
+            {
+                MessageBox.Show("Falta El path o ruta de acceso para generar el reporte");
+                return;
+            }
             foreach (Material M in Reporte)
             {
                 Registros.Add($"{M.Nombre};{M.Cantidad}");

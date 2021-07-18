@@ -75,8 +75,13 @@ namespace Parcial.Forms
                 string path = @"C:\Users\jacksong\Documents\ProgramacionLogica\Reporte.txt";
                 List<Empleado> Reporte = BaseDeDatos.Empleados;
                 List<string> Registros = new List<string>();
+                if (!File.Exists(path))
+                {
+                MessageBox.Show("Falta El path o ruta de acceso para generar el reporte");
+                return;
+                }
 
-                foreach (Empleado E in Reporte)
+            foreach (Empleado E in Reporte)
                 {
                     Registros.Add($"{E.Matricula};{E.Dni};{E.Nombre};{E.Especialidad.Nombre};{E.Provincia}");
                 }
